@@ -268,7 +268,12 @@ public class MainActivity extends Activity {
         String value = null;
         try { value = Settings.System.getString(getContentResolver(), key); } catch (Throwable ignored) {}
         if (value == null) {
-            try { value = android.os.SystemPropertiesProxy.get(key); } catch (Throwable ignored) {}
+            try {
+                Class<?> p = Class.forName("android.os.SystemProperties");
+                Method m = p.getDeclaredMethod("get", String.class);
+                m.setAccessible(true);
+                value = (String) m.invoke(null, key);
+            } catch (Throwable ignored) {}
         }
         log("STATE " + key + "=" + value);
     }
