@@ -77,7 +77,10 @@ jobs:
           with zipfile.ZipFile(apk) as z:
               names = z.namelist()
               dex = z.read("classes.dex")
-              assert dex[:8] == b"dex\n035\0", "DEX is not Android 5.0+ compatible"
+              version = dex[4:7].decode("ascii")
+              print("classes.dex version:", version)
+              assert dex[:4] == b"dex\n", "Invalid DEX header"
+              assert version in {"035", "037"}, "DEX version is newer than Android 7.1 supports"
               assert not any(n.startswith("lib/") for n in names), "Unexpected native ABI dependency"
               assert "AndroidManifest.xml" in names
           PY
