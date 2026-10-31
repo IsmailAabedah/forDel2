@@ -261,8 +261,8 @@ public class MainActivity extends Activity {
             }
         };
         IntentFilter f = new IntentFilter("com.zhonghong.zuiserver.BROADCAST");
-        if (Build.VERSION.SDK_INT >= 33) registerReceiver(wheelReceiver, f, Context.RECEIVER_EXPORTED);
-        else registerReceiver(wheelReceiver, f);
+        // Compile against Android 28 for the legacy head unit; targetSdk 22 uses this API.
+        registerReceiver(wheelReceiver, f);
         log("تم تسجيل مستقبل البث com.zhonghong.zuiserver.BROADCAST / WHEEL_KEY.");
     }
 
