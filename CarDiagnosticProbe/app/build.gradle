@@ -1,27 +1,35 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
+    // Match the head unit generation instead of compiling against a much newer Android API.
+    compileSdkVersion 25
     buildToolsVersion "28.0.3"
 
     defaultConfig {
-        applicationId "com.ismail.carprobe"
-        minSdkVersion 21
-        targetSdkVersion 22
-        versionCode 4
-        versionName "1.3"
+        // New application ID avoids conflicts with earlier test APKs signed by temporary CI keys.
+        applicationId "com.ismail.zhonghongprobe"
+        minSdkVersion 25
+        targetSdkVersion 25
+        versionCode 1
+        versionName "2.0"
     }
 
     signingConfigs {
-        debug {
+        release {
+            storeFile file("probe-signing.jks")
+            storePassword "ProbeSigning2026"
+            keyAlias "zhonghongprobe"
+            keyPassword "ProbeSigning2026"
+            // Keep v1 signing for maximum compatibility with Android 7.1 vendor installers.
             v1SigningEnabled true
             v2SigningEnabled false
         }
     }
 
     buildTypes {
-        debug {
-            signingConfig signingConfigs.debug
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
         }
     }
 
