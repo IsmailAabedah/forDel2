@@ -13,12 +13,17 @@ android {
     compileSdk 35
 
     defaultConfig {
-        signingConfig signingConfigs.debug
         applicationId 'com.ismail.carprobe'
         minSdk 21
         targetSdk 22
         versionCode 3
         versionName '1.2'
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
+        }
     }
 
     compileOptions {
