@@ -31,7 +31,7 @@
         <activity
             android:name="com.ismail.carprobe.MainActivity"
             android:screenOrientation="landscape"
-            android:exported="true">
+>
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
