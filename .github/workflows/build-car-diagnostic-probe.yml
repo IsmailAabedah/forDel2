@@ -1,4 +1,4 @@
-name: Build Car Diagnostic Probe APK (Legacy Android)
+name: Build Car Diagnostic Probe APK (Android 7.1.2)
 
 on:
   workflow_dispatch:
@@ -13,25 +13,31 @@ jobs:
     env:
       ANDROID_HOME: /usr/local/lib/android/sdk
       ANDROID_SDK_ROOT: /usr/local/lib/android/sdk
+
     steps:
       - name: Checkout
         uses: actions/checkout@v5
 
-      # The Android SDK manager on this runner contains Java 11 bytecode.
+      # sdkmanager on the runner needs Java 11; the legacy Gradle plugin needs Java 8.
       - name: Set up Java 11 for Android SDK
         uses: actions/setup-java@v5
         with:
           distribution: temurin
           java-version: '11'
 
-      - name: Install Android SDK 28
+      - name: Install Android API 25 platform and tools
         run: |
           SDKMANAGER="$(find "$ANDROID_HOME" -name sdkmanager -type f | head -n 1)"
           test -n "$SDKMANAGER"
           yes | "$SDKMANAGER" --licenses || true
-          "$SDKMANAGER" "platforms;android-28" "build-tools;28.0.3"
+          "$SDKMANAGER" "platforms;android-25" "build-tools;28.0.3"
 
-      # Keep the legacy Android Gradle Plugin on Java 8 for this API 25 target.
+      - name: Restore the persistent test signing key
+        run: |
+          base64 --decode CarDiagnosticProbe/probe-signing-keystore.b64 > CarDiagnosticProbe/app/probe-signing.jks
+          test -s CarDiagnosticProbe/app/probe-signing.jks
+          chmod 600 CarDiagnosticProbe/app/probe-signing.jks
+
       - name: Set up Java 8 for legacy Gradle
         uses: actions/setup-java@v5
         with:
@@ -43,21 +49,47 @@ jobs:
         with:
           gradle-version: '5.6.4'
 
-      - name: Build legacy APK
+      - name: Build Android 7.1 compatible release APK
         run: |
           java -version
-          gradle --no-daemon --stacktrace -p CarDiagnosticProbe :app:assembleDebug
+          gradle --no-daemon --stacktrace -p CarDiagnosticProbe :app:assembleRelease
+          cp CarDiagnosticProbe/app/build/outputs/apk/release/app-release.apk ZhongHong-Diagnostic-Probe-v2.0-Android-7.1.2.apk
 
-      - name: Verify APK archive and signature
+      - name: Verify package metadata, DEX, alignment and signatures
         run: |
-          APK=CarDiagnosticProbe/app/build/outputs/apk/debug/app-debug.apk
+          set -euo pipefail
+          APK=ZhongHong-Diagnostic-Probe-v2.0-Android-7.1.2.apk
+          AAPT="$ANDROID_HOME/build-tools/28.0.3/aapt"
+          ZIPALIGN="$ANDROID_HOME/build-tools/28.0.3/zipalign"
+          APKSIGNER="$ANDROID_HOME/build-tools/28.0.3/apksigner"
+
           test -s "$APK"
           unzip -t "$APK"
-          jarsigner -verify "$APK"
+          "$AAPT" dump badging "$APK" | tee apk-badging.txt
+          grep -F "package: name='com.ismail.zhonghongprobe' versionCode='1' versionName='2.0'" apk-badging.txt
+          grep -F "sdkVersion:'25'" apk-badging.txt
+          grep -F "targetSdkVersion:'25'" apk-badging.txt
 
-      - name: Upload APK
+          # It contains only Java bytecode, so it is universal across ARM32/ARM64 devices.
+          python3 - <<'PY'
+          import zipfile
+          apk = "ZhongHong-Diagnostic-Probe-v2.0-Android-7.1.2.apk"
+          with zipfile.ZipFile(apk) as z:
+              names = z.namelist()
+              dex = z.read("classes.dex")
+              assert dex[:8] == b"dex\\n035\\0", "DEX is not Android 5.0+ compatible"
+              assert not any(n.startswith("lib/") for n in names), "Unexpected native ABI dependency"
+              assert "AndroidManifest.xml" in names
+          PY
+
+          "$ZIPALIGN" -c -v 4 "$APK"
+          "$APKSIGNER" verify --verbose --print-certs --min-sdk-version 25 "$APK"
+          jarsigner -verify "$APK"
+          sha256sum "$APK"
+
+      - name: Upload tested APK
         uses: actions/upload-artifact@v4
         with:
-          name: ZhongHong-Diagnostic-Probe-APK-v1.3
-          path: CarDiagnosticProbe/app/build/outputs/apk/debug/app-debug.apk
+          name: ZhongHong-Diagnostic-Probe-Android-7.1.2-v2.0
+          path: ZhongHong-Diagnostic-Probe-v2.0-Android-7.1.2.apk
           if-no-files-found: error
