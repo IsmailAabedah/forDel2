@@ -14,6 +14,8 @@ import java.lang.reflect.Method;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class MainActivity extends Activity {
     private LinearLayout root, logBox;
@@ -26,6 +28,7 @@ public class MainActivity extends Activity {
     private Binder mcuCallback;
     private IBinder logicService, mcuService;
     private ContentObserver settingsObserver;
+    private final ExecutorService binderWorker = Executors.newSingleThreadExecutor();
 
     private String stamp() {
         return new SimpleDateFormat("HH:mm:ss.SSS", Locale.US).format(new Date());
@@ -58,9 +61,13 @@ public class MainActivity extends Activity {
                 + getResources().getDisplayMetrics().heightPixels);
         readBluetoothSnapshot();
         registerWheelBroadcast();
-        registerLogicCallback();
-        registerMcuHardKeyListener();
         registerSettingsObserver();
+        log("بدء اتصالات Binder في خيط خلفي لتجنب تجميد الواجهة...");
+        binderWorker.execute(() -> {
+            registerLogicCallback();
+            registerMcuHardKeyListener();
+            log("انتهت مرحلة محاولة تسجيل مستمعي Logic وMCU.");
+        });
         log("جاهز. أوقف السيارة تماماً قبل الضغط على أزرار المقود.");
     }
 
@@ -300,8 +307,9 @@ public class MainActivity extends Activity {
             log("USB: الاتصال بالخدمة مسجل بالفعل.");
             return;
         }
-        Intent i = new Intent("com.zhonghong.usb_music_action");
-        i.setPackage("com.zhonghong.yzmusic");
+        Intent i = new Intent();
+        i.setClassName("com.zhonghong.yzmusic",
+                "com.zhonghong.music.model.service.UsbMusicService");
         usbConnection = new ServiceConnection() {
             @Override public void onServiceConnected(ComponentName name, IBinder binder) {
                 usbBound = true;
@@ -336,6 +344,7 @@ public class MainActivity extends Activity {
         try { if (wheelReceiver != null) unregisterReceiver(wheelReceiver); } catch (Throwable ignored) {}
         try { if (settingsObserver != null) getContentResolver().unregisterContentObserver(settingsObserver); } catch (Throwable ignored) {}
         try { if (usbBound && usbConnection != null) unbindService(usbConnection); } catch (Throwable ignored) {}
+        binderWorker.shutdownNow();
         super.onDestroy();
     }
 }
