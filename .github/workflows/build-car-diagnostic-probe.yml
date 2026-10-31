@@ -1,0 +1,32 @@
+name: Build Car Diagnostic Probe APK
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'CarDiagnosticProbe/**'
+      - '.github/workflows/build-car-diagnostic-probe.yml'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.7'
+      - name: Build debug APK
+        run: gradle --no-daemon --stacktrace -p CarDiagnosticProbe :app:assembleDebug
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: ZhongHong-Diagnostic-Probe-APK
+          path: CarDiagnosticProbe/app/build/outputs/apk/debug/app-debug.apk
+          if-no-files-found: error
