@@ -1,0 +1,336 @@
+package com.ismail.carprobe;
+
+import android.app.Activity;
+import android.content.*;
+import android.database.ContentObserver;
+import android.media.AudioManager;
+import android.net.Uri;
+import android.os.*;
+import android.provider.Settings;
+import android.view.Gravity;
+import android.view.View;
+import android.widget.*;
+import java.lang.reflect.Method;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+
+public class MainActivity extends Activity {
+    private LinearLayout root, logBox;
+    private TextView status;
+    private final StringBuilder report = new StringBuilder();
+    private BroadcastReceiver wheelReceiver;
+    private ServiceConnection usbConnection;
+    private boolean usbBound = false;
+    private Binder logicCallback;
+    private Binder mcuCallback;
+    private IBinder logicService, mcuService;
+    private ContentObserver settingsObserver;
+
+    private String stamp() {
+        return new SimpleDateFormat("HH:mm:ss.SSS", Locale.US).format(new Date());
+    }
+
+    private void log(String s) {
+        String line = "[" + stamp() + "] " + s;
+        report.append(line).append("\n");
+        runOnUiThread(() -> {
+            if (logBox != null) {
+                TextView t = new TextView(this);
+                t.setText(line);
+                t.setTextColor(0xffdce6f2);
+                t.setTextSize(13);
+                t.setPadding(5, 3, 5, 3);
+                logBox.addView(t, 0);
+            }
+            if (status != null) status.setText("تم تسجيل حدث جديد • " + report.toString().split("\n").length);
+        });
+        android.util.Log.i("CarProbe", line);
+    }
+
+    @Override public void onCreate(Bundle b) {
+        super.onCreate(b);
+        buildUi();
+        log("بدء ZhongHong Diagnostic Probe v1.0");
+        log("Android=" + Build.VERSION.RELEASE + " SDK=" + Build.VERSION.SDK_INT
+                + " ABI=" + Build.CPU_ABI + " device=" + Build.DEVICE);
+        log("الشاشة=" + getResources().getDisplayMetrics().widthPixels + "x"
+                + getResources().getDisplayMetrics().heightPixels);
+        readBluetoothSnapshot();
+        registerWheelBroadcast();
+        registerLogicCallback();
+        registerMcuHardKeyListener();
+        registerSettingsObserver();
+        log("جاهز. أوقف السيارة تماماً قبل الضغط على أزرار المقود.");
+    }
+
+    private void buildUi() {
+        root = new LinearLayout(this);
+        root.setOrientation(LinearLayout.VERTICAL);
+        root.setBackgroundColor(0xff101923);
+        root.setPadding(18, 12, 18, 10);
+
+        TextView title = new TextView(this);
+        title.setText("فاحص نظام ZhongHong");
+        title.setTextColor(0xffffffff);
+        title.setTextSize(23);
+        title.setGravity(Gravity.CENTER);
+        root.addView(title, new LinearLayout.LayoutParams(-1, 42));
+
+        status = new TextView(this);
+        status.setText("جارٍ تهيئة الفحوصات...");
+        status.setTextColor(0xff83d6bd);
+        status.setTextSize(14);
+        status.setGravity(Gravity.CENTER);
+        root.addView(status, new LinearLayout.LayoutParams(-1, 32));
+
+        LinearLayout buttons = new LinearLayout(this);
+        buttons.setOrientation(LinearLayout.HORIZONTAL);
+        addButton(buttons, "حالة البلوتوث", this::readBluetoothSnapshot);
+        addButton(buttons, "اختبار USB", this::probeUsbService);
+        addButton(buttons, "تحديث الفحوصات", this::refreshAll);
+        addButton(buttons, "نسخ التقرير", this::copyReport);
+        root.addView(buttons, new LinearLayout.LayoutParams(-1, 54));
+
+        TextView hint = new TextView(this);
+        hint.setText("اختبار المقود: اضغط كل زر مرة واحدة والسيارة متوقفة، ويفضّل أثناء تشغيل موسيقى الهاتف عبر Bluetooth.");
+        hint.setTextColor(0xffffd27a);
+        hint.setTextSize(14);
+        hint.setPadding(4, 6, 4, 8);
+        root.addView(hint);
+
+        ScrollView scroll = new ScrollView(this);
+        logBox = new LinearLayout(this);
+        logBox.setOrientation(LinearLayout.VERTICAL);
+        scroll.addView(logBox);
+        root.addView(scroll, new LinearLayout.LayoutParams(-1, 0, 1));
+        setContentView(root);
+    }
+
+    private void addButton(LinearLayout parent, String label, Runnable action) {
+        Button b = new Button(this);
+        b.setText(label);
+        b.setTextSize(12);
+        b.setOnClickListener(v -> action.run());
+        parent.addView(b, new LinearLayout.LayoutParams(0, -1, 1));
+    }
+
+    private void refreshAll() {
+        readBluetoothSnapshot();
+        probeUsbService();
+        log("تم تنفيذ تحديث يدوي للفحوصات.");
+    }
+
+    private void registerWheelBroadcast() {
+        wheelReceiver = new BroadcastReceiver() {
+            @Override public void onReceive(Context c, Intent i) {
+                String key = i.getStringExtra("WHEEL_KEY");
+                log("WHEEL_BROADCAST action=" + i.getAction() + " WHEEL_KEY=" + key
+                        + " extras=" + i.getExtras());
+            }
+        };
+        IntentFilter f = new IntentFilter("com.zhonghong.zuiserver.BROADCAST");
+        if (Build.VERSION.SDK_INT >= 33) registerReceiver(wheelReceiver, f, Context.RECEIVER_EXPORTED);
+        else registerReceiver(wheelReceiver, f);
+        log("تم تسجيل مستقبل البث com.zhonghong.zuiserver.BROADCAST / WHEEL_KEY.");
+    }
+
+    private IBinder service(String name) {
+        try {
+            Class<?> c = Class.forName("android.os.ServiceManager");
+            Method m = c.getDeclaredMethod("getService", String.class);
+            m.setAccessible(true);
+            return (IBinder) m.invoke(null, name);
+        } catch (Throwable e) {
+            log("ServiceManager lookup failed " + name + ": " + e);
+            return null;
+        }
+    }
+
+    private void registerLogicCallback() {
+        logicService = service("_logic_service");
+        if (logicService == null) {
+            log("LOGIC: _logic_service غير متاح.");
+            return;
+        }
+        logicCallback = new Binder() {
+            @Override protected boolean onTransact(int code, Parcel data, Parcel reply, int flags)
+                    throws RemoteException {
+                if (code == 1) {
+                    data.enforceInterface("com.logic.common.aidl.ILogicCallback");
+                    String event = data.readString();
+                    String value = data.readString();
+                    String extra = data.readString();
+                    log("LOGIC_EVENT event=" + event + " value=" + value + " extra=" + extra);
+                    if (reply != null) reply.writeNoException();
+                    return true;
+                }
+                return super.onTransact(code, data, reply, flags);
+            }
+        };
+        logicCallback.attachInterface(null, "com.logic.common.aidl.ILogicCallback");
+        try {
+            Parcel d = Parcel.obtain(), r = Parcel.obtain();
+            d.writeInterfaceToken("com.logic.common.aidl.ILogicInterface");
+            d.writeInt(3);
+            d.writeStrongBinder(logicCallback);
+            boolean ok = logicService.transact(1, d, r, 0);
+            if (ok) { r.readException(); log("LOGIC callback registration transaction accepted."); }
+            else log("LOGIC callback registration transaction returned false.");
+            d.recycle(); r.recycle();
+            readLogicValues();
+        } catch (Throwable e) {
+            log("LOGIC registration error: " + e);
+        }
+    }
+
+    private void readLogicValues() {
+        String[] keys = {"getSourceId", "getThirdSourceId", "isAccOn", "isInBackState",
+                "isIllon", "isPowerOn", "isRunning", "getFocusState"};
+        for (String key : keys) {
+            try {
+                Parcel d = Parcel.obtain(), r = Parcel.obtain();
+                d.writeInterfaceToken("com.logic.common.aidl.ILogicInterface");
+                d.writeString(key);
+                d.writeString("");
+                boolean ok = logicService.transact(4, d, r, 0);
+                if (ok) { r.readException(); log("LOGIC_GET " + key + "=" + r.readString()); }
+                else log("LOGIC_GET " + key + " transaction=false");
+                d.recycle(); r.recycle();
+            } catch (Throwable e) { log("LOGIC_GET " + key + " error=" + e); }
+        }
+    }
+
+    private void registerMcuHardKeyListener() {
+        mcuService = service("zhonghong.mcu");
+        if (mcuService == null) {
+            log("MCU: خدمة zhonghong.mcu غير متاحة.");
+            return;
+        }
+        mcuCallback = new Binder() {
+            @Override protected boolean onTransact(int code, Parcel data, Parcel reply, int flags)
+                    throws RemoteException {
+                if (code == 2) {
+                    data.enforceInterface("android.zhonghong.IDataChangedListener");
+                    int domain = data.readInt();
+                    int cmd = data.readInt();
+                    int arg = data.readInt();
+                    int pos = data.dataPosition();
+                    int size = data.dataSize();
+                    String tail;
+                    try {
+                        byte[] raw = data.marshall();
+                        StringBuilder hex = new StringBuilder();
+                        for (int i = Math.min(pos, raw.length); i < raw.length; i++) {
+                            hex.append(String.format(Locale.US, "%02X", raw[i]));
+                            if (i < raw.length - 1) hex.append(' ');
+                        }
+                        tail = hex.toString();
+                    } catch (Throwable e) { tail = "raw-unavailable:" + e; }
+                    log("MCU_CALLBACK domain=" + domain + " cmd=" + cmd + " arg=" + arg
+                            + " parcelPos=" + pos + " parcelSize=" + size + " tail=" + tail);
+                    if (reply != null) reply.writeNoException();
+                    return true;
+                }
+                return super.onTransact(code, data, reply, flags);
+            }
+        };
+        mcuCallback.attachInterface(null, "android.zhonghong.IDataChangedListener");
+        try {
+            Parcel d = Parcel.obtain(), r = Parcel.obtain();
+            d.writeInterfaceToken("android.zhonghong.IMcuService");
+            d.writeInt(4);
+            d.writeStrongBinder(mcuCallback);
+            boolean ok = mcuService.transact(5, d, r, 0);
+            if (ok) log("MCU domain-4 listener result=" + r.readInt());
+            else log("MCU domain-4 listener transaction returned false.");
+            d.recycle(); r.recycle();
+        } catch (Throwable e) {
+            log("MCU domain-4 registration error: " + e);
+        }
+    }
+
+    private void readBluetoothSnapshot() {
+        readSetting("bt_connected");
+        readSetting("key_bluetooth_state");
+        readSetting("key_signal_state");
+        readSetting("key_battery_state");
+        readSetting("sys.btcall");
+        try {
+            AudioManager am = (AudioManager) getSystemService(AUDIO_SERVICE);
+            log("AUDIO musicActive=" + am.isMusicActive()
+                    + " musicVolume=" + am.getStreamVolume(AudioManager.STREAM_MUSIC)
+                    + "/" + am.getStreamMaxVolume(AudioManager.STREAM_MUSIC));
+        } catch (Throwable e) { log("AUDIO state error=" + e); }
+    }
+
+    private void readSetting(String key) {
+        String value = null;
+        try { value = Settings.System.getString(getContentResolver(), key); } catch (Throwable ignored) {}
+        if (value == null) {
+            try { value = android.os.SystemPropertiesProxy.get(key); } catch (Throwable ignored) {}
+        }
+        log("STATE " + key + "=" + value);
+    }
+
+    private void registerSettingsObserver() {
+        settingsObserver = new ContentObserver(new Handler()) {
+            @Override public void onChange(boolean selfChange, Uri uri) {
+                log("SETTINGS_CHANGED uri=" + uri);
+                readBluetoothSnapshot();
+            }
+        };
+        String[] keys = {"bt_connected", "key_bluetooth_state", "key_signal_state", "key_battery_state"};
+        for (String k : keys) {
+            try { getContentResolver().registerContentObserver(
+                    Settings.System.getUriFor(k), false, settingsObserver); } catch (Throwable e) {
+                log("Observer error " + k + ": " + e);
+            }
+        }
+        log("تم تفعيل مراقبة تغيّر مؤشرات Bluetooth في Settings.System.");
+    }
+
+    private void probeUsbService() {
+        if (usbBound) {
+            log("USB: الاتصال بالخدمة مسجل بالفعل.");
+            return;
+        }
+        Intent i = new Intent("com.zhonghong.usb_music_action");
+        i.setPackage("com.zhonghong.yzmusic");
+        usbConnection = new ServiceConnection() {
+            @Override public void onServiceConnected(ComponentName name, IBinder binder) {
+                usbBound = true;
+                try {
+                    log("USB_SERVICE_CONNECTED component=" + name.flattenToShortString()
+                            + " descriptor=" + binder.getInterfaceDescriptor()
+                            + " ping=" + binder.pingBinder());
+                } catch (Throwable e) { log("USB connected but descriptor read failed: " + e); }
+            }
+            @Override public void onServiceDisconnected(ComponentName name) {
+                usbBound = false;
+                log("USB_SERVICE_DISCONNECTED " + name);
+            }
+        };
+        try {
+            boolean accepted = bindService(i, usbConnection, Context.BIND_AUTO_CREATE);
+            log("USB bindService accepted=" + accepted
+                    + " (هذه الخطوة لا تستدعي أوامر التشغيل ولا تغيّر الموسيقى).");
+        } catch (Throwable e) { log("USB bind error=" + e); }
+    }
+
+    private void copyReport() {
+        String text = report.toString();
+        android.content.ClipboardManager cb =
+                (android.content.ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
+        cb.setPrimaryClip(ClipData.newPlainText("Car diagnostic report", text));
+        Toast.makeText(this, "تم نسخ التقرير. الصقه هنا في المحادثة.", Toast.LENGTH_LONG).show();
+        log("تم نسخ التقرير إلى الحافظة.");
+    }
+
+    @Override protected void onDestroy() {
+        try { if (wheelReceiver != null) unregisterReceiver(wheelReceiver); } catch (Throwable ignored) {}
+        try { if (settingsObserver != null) getContentResolver().unregisterContentObserver(settingsObserver); } catch (Throwable ignored) {}
+        try { if (usbBound && usbConnection != null) unbindService(usbConnection); } catch (Throwable ignored) {}
+        super.onDestroy();
+    }
+}
