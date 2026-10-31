@@ -1,0 +1,2749 @@
+[  17.477] CarCheck started
+[  17.480] 
+[  17.480] ===== 1. ENVIRONMENT =====
+[  17.482] MODEL=AOSP on zh_dragon DEVICE=zh_dragon SDK=25 FINGERPRINT=Android/aosp_zh_dragon/zh_dragon:7.1.2/N2G48H/builde02141541:userdebug/release-keys
+[  17.482] DISPLAY=DisplayMetrics{density=1.5, width=952, height=600, scaledDensity=1.5, xdpi=213.0, ydpi=213.0}
+[  17.540] id: uid=10028(u0_a28) gid=10028(u0_a28) groups=10028(u0_a28),3002(net_bt),9997(everybody),50028(all_a28) context=u:r:untrusted_app:s0:c512,c768
+[  17.541] prop ro.boot.selinux = permissive
+[  17.541] prop sys.btcall = <unset>
+[  17.541] prop sys.innavi = <unset>
+[  17.542] prop sys.carlifevr = false
+[  17.542] prop sys.stream.duckvalue = <unset>
+[  17.542] prop zh.navi.pidlist = 1252,1527
+[  17.543] prop CarSettingKey = <unset>
+[  17.543] prop ro.kernel.android.mcu = ttyAMA2
+[  17.543] prop ro.kernel.android.gps = ttyAMA0
+[  17.544] prop ro.kernel.android.bt = goc_serial
+[  17.544] prop ro.mcu.baudRate = 2
+[  17.544] prop persist.sys.default.launcher = com.zhonghong.launcher/com.zhonghong.launcher.activity.LauncherActivity
+[  17.544] prop persist.sys.default_navi = 18
+[  17.545] prop persist.zh.login = true
+[  17.545] prop sys.zh.login = <unset>
+[  17.545] prop ro.build.zhonghongpackage = YIZHAN 2024-01-17 21:16:49
+[  17.545] prop ro.boot.hardwarever = <unset>
+[  17.548] Settings.System back_state = false
+[  17.548] Settings.System bt_connected = true
+[  17.549] Settings.System key_bluetooth_state = 2
+[  17.549] Settings.System key_signal_state = 4
+[  17.550] Settings.System key_battery_state = 3
+[  17.550] Settings.System navi_mix_value = <null>
+[  17.550] Settings.System screen_brightness = 230
+[  17.551] Settings.System screen_brightness_mode = <null>
+[  17.551] Settings.System radio_rds_enbale = false
+[  17.551] Settings.System system_state_aux = 0
+[  17.552] Settings.System key_type_car_level = <null>
+[  17.552] Settings.System time_12_24 = 24
+[  17.552] Settings.System CAR_ENGINE_OIL_CHANGE_TYPE = <null>
+[  17.553] Settings.System CAR_ENGINE_OIL_CHANGE_REMAIN_TYPE = ۴۰۰۰_33926
+[  17.553] Settings.System CAR_ENGINE_OIR_FILTER_CHANGE_TYPE = <null>
+[  17.553] Settings.System CAR_ENGINE_OIR_FILTER_CHANGE_REMAIN_TYPE = ۴۰۰۰_33926
+[  17.554] Settings.System CAR_ENGINE_AIR_FILTER_CHANGE_TYPE = <null>
+[  17.554] Settings.System CAR_ENGINE_AIR_FILTER_CHANGE_REMAIN_TYPE = ۴۰۰۰_33926
+[  17.554] Settings.System CAR_FUEL_FILTER_CHANGE_TYPE = <null>
+[  17.556] Settings.System CAR_FUEL_FILTER_CHANGE_REMAIN_TYPE = ۴۰۰۰_33926
+[  17.559] audio stream 0: vol=12 max=30
+[  17.560] audio stream 1: vol=30 max=30
+[  17.561] audio stream 2: vol=30 max=30
+[  17.562] audio stream 3: vol=8 max=30
+[  17.563] audio stream 4: vol=0 max=30
+[  17.564] audio stream 5: vol=30 max=30
+[  17.565] audio stream 6: vol=30 max=30
+[  17.565] audio stream 7: vol=30 max=30
+[  17.566] audio stream 8: vol=8 max=30
+[  17.568] audio stream 9: vol=8 max=30
+[  17.569] audio stream 10: vol=10 max=30
+[  17.569] audio stream 11: IllegalArgumentException
+[  17.571] music active=true mode=0
+[  17.573] GPS provider enabled=true
+[  17.574] pkg com.zhonghong.can installed v2024.01.05 (2)
+[  17.575] pkg com.zhonghong.logic installed v202401051107 (20240105)
+[  17.575] pkg com.zhonghong.mcu installed v20170117 (20170117)
+[  17.576] pkg com.zhonghong.bluetooth installed v202401051453 (240105)
+[  17.577] pkg com.zhonghong.aidlserver installed v1.0 (1)
+[  17.577] pkg com.zhonghong.yzmusic installed v202303211539 (2)
+[  17.578] pkg com.zhonghong.yzvideo installed v20240105.01 (7)
+[  17.579] pkg com.zhonghong.mediascan2 installed v20230321.1.0 (20230321)
+[  17.583] pkg com.zh.yzradio installed v202211090303 (2)
+[  17.584] pkg com.zh.settings installed v202401051446 (230105)
+[  17.584] pkg com.zhonghong.carsetting installed v202401171303 (240117)
+[  17.585] pkg com.zhonghong.launcher installed v202401051430 (230105)
+[  17.586] pkg com.car.phoneprovider installed v20180720 (20180720)
+[  17.586] pkg com.zh.auxin installed v202110211840 (240105)
+[  17.587] pkg com.zhonghong.screensaver installed v202209191426 (20220919)
+[  17.588] pkg com.zhonghong.update installed v202302071016 (20230207)
+[  17.588] pkg com.zhonghong.avm NOT installed
+[  17.589] pkg com.zhonghong.carlife NOT installed
+[  17.589] pkg com.zhonghong.phonelink NOT installed
+[  17.589] pkg com.zhonghong.power NOT installed
+[  17.590] pkg com.zhonghong.zuiserver NOT installed
+[  17.590] pkg com.zhonghong.radio NOT installed
+[  17.591] pkg net.easyconn installed v6.8-d81aed1c8-202208021900 (1559027)
+[  17.591] pkg com.estrongs.android.pop installed v3.1.0.3 (131)
+[  17.592] pkg com.xbrowser.play installed v3.4.5 (515)
+[  17.592] pkg com.chartcross.gpstest installed v1.5.4 (36)
+[  17.592] pkg com.polstar.polnav6 installed v6.0.30 (1)
+[  17.593] pkg org.rajman.neshan.traffic.tehran.navigator installed v9.8.3.1-CAR (70181)
+[  17.593] pkg com.google.android.apps.maps installed v11.41.0604 (1066632900)
+[  17.594] pkg com.android.packageinstaller installed v7.1.2 (25)
+[  17.595] intent a:com.zhonghong.intent.action.music resolves=true
+[  17.596] intent a:com.zhonghong.usb_music_activity resolves=true
+[  17.596] intent a:com.zhonghong.usb_music_list resolves=true
+[  17.597] intent a:com.zhonghong.video_activity resolves=true
+[  17.598] intent a:android.bluetooth_btdial resolves=true
+[  17.599] intent a:android.bluetooth_btsettings resolves=true
+[  17.600] intent a:android.bluetooth_btmusic resolves=true
+[  17.600] intent a:com.zhonghong.action.set resolves=true
+[  17.601] intent a:com.zhonghong.action.eq resolves=true
+[  17.602] intent a:com.zhonghong.launcher.MEDIA_ACTION resolves=true
+[  17.603] intent a:com.zhonghong.launcher.NAVI_ACTION resolves=true
+[  17.604] intent c:com.zh.yzradio/com.zh.yzradio.MainActivity resolves=true
+[  17.604] intent c:com.zhonghong.carsetting/com.zhonghong.carsetting.MainActivity resolves=true
+[  17.605] intent c:com.zh.auxin/com.zh.auxin.MainActivity resolves=true
+[  17.606] intent c:com.android.settings/.Settings resolves=true
+[  17.607] intent a:android.settings.SETTINGS resolves=true
+[  17.608] intent c:com.estrongs.android.pop/com.estrongs.android.pop.view.FileExplorerActivity resolves=true
+[  17.608] 
+[  17.609] ===== 2. SYSTEM SERVICES PRESENCE =====
+[  17.623] service count = 86
+[  17.623]   service: zhupdate_service
+[  17.623]   service: _logic_service
+[  17.624]   service: network_time_update_service
+[  17.624]   service: updatelock
+[  17.624]   service: wifiscanner
+[  17.624]   service: webviewupdate
+[  17.625]   service: zhonghong.mcu
+[  17.626] getService("zhbt_service") -> null
+[  17.626] getService("zh_can_service") -> null
+[  17.627] getService("_logic_service") -> binder, descriptor=com.logic.common.aidl.ILogicInterface
+[  17.629] getService("zhonghong.mcu") -> binder, descriptor=android.zhonghong.IMcuService
+[  17.630] getService("zhupdate_service") -> binder, descriptor=com.zhonghong.update.aidl.IUpdateInterface
+[  17.795] shell 'service list' filtered:
+0	zhupdate_service: [com.zhonghong.update.aidl.IUpdateInterface]
+1	_logic_service: [com.logic.common.aidl.ILogicInterface]
+11	network_time_update_service: []
+25	updatelock: [android.os.IUpdateLock]
+28	wifiscanner: [android.net.wifi.IWifiScanner]
+53	webviewupdate: [android.webkit.IWebViewUpdateService]
+75	zhonghong.mcu: [android.zhonghong.IMcuService]
+
+[  17.797] 
+[  17.798] ===== 3. CAN SERVICE (com.zhonghong.can) =====
+[  17.805] CanService: bindService returned true
+[  17.832] descriptor = com.zhonghong.cancommon.ICanInterface
+[  17.834] registerCallback OK
+[  17.841] CAN type 1: frames 722(14) 800(14) 963(14) 1218(14) 1219(14) 
+[  17.845] CAN type 2: frames 1042(14) 1043(14) 
+[  17.857] CAN type 3: frames 564(14) 577(14) 
+[  17.866] CAN type 4: frames 695(14) 
+[  17.867] getElementDataInfo returned data: true
+[  17.904] SNAP(initial) FULL (159 signals):
+[  17.906]   LH_Indicator_Switch_Status@564=0  RH_Indicator_Switch_Status@564=0  Position_Lamp_Switch_Status@564=0  Low_Beam_Switch_Status@564=0  
+[  17.906]   High_Beam_Lamp_Switch_Status@564=0  Front_Fog_Lamp_Switch_Status@564=0  Rear_Fog_Lamp_Switch_Status@564=0  Horn_Switch_Status@564=0  
+[  17.907]   Front_LH_Door_Switch_Status@564=1  Front_RH_Door_Switch_Status@564=1  Rear_LH_Door_Switch_Status@564=1  Rear_RH_Door_Switch_Status@564=1  
+[  17.907]   Trunk_Lid_Switch_Status@564=1  Bonnet_Switch_Status@564=1  Wash_Pump_Switch_Status@564=0  Wiper_INT_Switch_Status@564=0  Wiper_Low_Speed_Switch_Status@564=0  
+[  17.907]   Wiper_High_Speed_Switch_Status@564=0  Wiper_Auto_Switch_Status@564=0  Rear_Wiper_Switch_Status@564=0  Rear_Wash_Pump_Switch_Status@564=0  
+[  17.908]   Front_Wiper_Return_Switch_Status@564=0  Start_Switch_Status@564=2  AC_Switch_Status@564=0  Screen_Heater_Switch_Status@564=0  Brake_Pedal_Switch_Status@564=0  
+[  17.908]   Hand_Brake_Switch_Status@564=1  Reverse_Gear_Switch_Status@564=0  Driver_Seat_Belt_Switch_Status@564=0  Passanger_Seat_Belt_Switch_Status@564=1  
+[  17.908]   Passanger_Load_Cell_Switch_Status@564=0  Remote_Status@564=3  Global_Lock_Unlock_Status@564=0  FLH_Actuator_Switch_Status@564=0  FRH_Actuator_Switch_Status@564=0  
+[  17.909]   Master_Lock_Switch_Status@564=0  Anti_theft_Status@564=0  LH_Window_Switch_Status@564=0  RH_Window_Switch_Status@564=0  Hazard_Switch_Status@564=0  
+[  17.909]   Trunk_Lid_Command_Switch_Status@564=1  Indicator_Lamps_Command@564=0  Shock_Sensor_Command@564=0  Resons_For_Lock_change_status@564=0  
+[  17.910]   PowerDistributionStatus@577=2  PKE_RKE_UnlockSignal@577=0  PKE_RKE_LockSignal@577=0  PKE_RKE_LuggageUnlockSignal@577=0  BrakePedalStatus@577=0  
+[  17.910]   RemoteWindowUpSignal@577=0  RemoteWindowDownSignal@577=0  SearchCarSignal@577=0  KeyInCarAlarmSignal@577=0  KeyBatteryStatus@577=0  
+[  17.911]   RemoteAlarmCommand@577=0  KeyPositionStatus@577=0  Key_Position_Light_Command@577=0  UnlockModeTransitionSignal@577=0  UnallowStartupSignal@577=0  
+[  17.912]   PERequestButtonSignal@577=0  Anti_theft_status_indication@577=0  PEPS_Fail_Status@577=0  PEPS_Anti_theft_Command@577=0  IGSwitchSteerlockStatus@577=1  
+[  17.912]   IGSwitchSteerlockFaultBit@577=0  ESCLLock_UnlockFailIndication@577=3  PEPS_AlarmStatus@577=0  PEPS_ICMAlarm@577=0  PEPS_ICMInd@577=0  
+[  17.912]   ACCRelaySt@577=1  IG1RelaySt@577=1  IG2RelaySt@577=1  StartRelaySt@577=0  Left_Indicator_Lamp_Status@963=0  Right_Indicator_Lamp_Status@963=0  
+[  17.913]   Position_Lamp_Status@963=0  Low_Beam_Status@963=0  High_Beam_Status@963=0  Front_Fog_Lamp_Status@963=0  Rear_Fog_Lamp_Status@963=0  
+[  17.913]   Daylight_Status@963=1  Roof_Lamp_Status@963=0  Brake_Lamp_Status@963=0  Reversing_Lamp_Status@963=0  Left_Corner_Lamp_Status@963=0  
+[  17.914]   Right_Corner_Lamp_Status@963=0  Vehicle_Type@963=1  Front_Wiper_Output_Status@963=0  Rear_Wiper_Output_Status@963=0  Wash_Output_Status@963=0  
+[  17.915]   Horn_Relay__Status@963=0  Screen_Heater_Relay__Status@963=0  Isolator_Relay__Status@963=1  Veco_Relay__Status@963=0  Door_Lock_Output__Status@963=0  
+[  17.916]   Trunk_Output__Status@963=0  Buzzer_Output__Status@963=0  Reaview_Mirror_Output__Status@963=0  Hazard_LED_Output_Status@963=0  Master_Lock_LED_Output_Status@963=0  
+[  17.916]   Child_Lock_LED_Indicator_Output_Status@963=0  Anti_theft_Indicator_Output_Status@963=0  Start_Stop_Amber_LED_Output_Status@963=0  Start_Stop_Green_LED_Output_Status@963=1  
+[  17.917]   ODO_calculated_By_BCM@800=19520  Checksum_of_message_Airbag_1@722=236  The_crash_intensity_describes_whether_there_is_a_crash@722=0  
+[  17.918]   Driver_seatbelt_lock_recognition@722=0  Passenger_seatbelt_lock_recognition@722=3  Airbag_counter_for_live_check@722=14  Error_flag_of_the_airbag_ECU@722=0  
+[  17.926]   Passenger_airbag_cut_off_status@722=0  ODO_calculated_By_ICM@1219=19520  Torque_Reserve_Request@1218=0  Transmission_EOL_Status@1218=39  
+[  17.927]   Fuel_Cut_Off_Assist_Flag@1218=1  Shifter_Lever_Signals@1218=9  Winter_Mode_Status@1218=0  Transmission_Warning_Lamp@1218=0  OBD_Warning_Flag_Request@1218=0  
+[  17.928]   Clutch_Temperature_Warning@1218=0  Transmision_Temperature_Warning@1218=0  Overal_Ratio@1218=15700  Vehicle_Speed@1218=0  FLTyrePressureValue@1042=68  
+[  17.928]   FRTyrePressureValue@1042=66  RLTyrePressureValue@1042=68  RRTyrePressureValue@1042=77  FLTyreTemperatureValue@1042=58  FRTyreTemperatureValue@1042=62  
+[  17.928]   RLtyreTemperatureValue@1042=59  RRTyreTemperatureValue@1042=59  FLtyrePressureStatus@1043=2  FLtyreTemperatureStauts@1043=0  FLTPMSError@1043=0  
+[  17.929]   FLAirLeakError@1043=0  FRTyrePressureStatus@1043=2  FRTyreTemperatureStauts@1043=0  FRTPMSError@1043=0  FRAirLeakError@1043=0  RLTyrePressureStatus@1043=0  
+[  17.929]   RLtyreTemperatureStauts@1043=0  RLTPMSError@1043=0  RLAirLeakError@1043=0  RRtyrePressureStatus@1043=0  RRTyreTemperatureStauts@1043=0  
+[  17.929]   RRTPMSError@1043=0  RRAirLeakError@1043=0  FLTyreSelfLocalizationStatus@1043=1  FRTyreSelfLocalizationStatus@1043=1  RLTyreSelfLocalizationStatus@1043=1  
+[  17.930]   RRTyreSelfLocalizationStatus@1043=1  PEPS_TPMSSystemConfiguration@1043=1  FLSensorLowBattery@1043=0  FRSensorLowBattery@1043=0  RLSensorLowBattery@1043=0  
+[  17.930]   RRSensorLowBattery@1043=0  is413CanValid@1043=0  AmbientTemp@695=116  
+[  17.932]   RAW 564: 02 34 09 00 3F 00 02 24 03 00 02 00 AE 0A
+[  17.933]   RAW 577: 02 41 09 02 00 00 00 40 06 00 07 00 A0 0A
+[  17.934]   RAW 695: 02 B7 09 74 00 00 00 00 00 00 00 00 3B 0A
+[  17.935]   RAW 722: 02 D2 09 8C 00 0C 00 80 00 00 00 00 FA 0A
+[  17.937]   RAW 800: 03 20 09 40 4C 16 02 00 00 00 00 00 D5 0A
+[  17.938]   RAW 963: 03 C3 09 00 40 00 04 00 10 00 00 00 28 0A
+[  17.947]   RAW 1042: 04 12 09 44 42 44 4D 3A 3E 3B 3B 00 29 0A
+[  17.948]   RAW 1043: 04 13 09 02 02 00 00 55 01 00 00 00 7F 0A
+[  17.950]   RAW 1218: 04 C2 09 00 27 00 54 3D 00 00 00 00 8C 0A
+[  17.951]   RAW 1219: 04 C3 09 40 4C 16 02 07 00 00 00 00 80 0A
+[  17.952] 
+[  17.952] ===== 4. LOGIC SERVICE (_logic_service) =====
+[  17.954] descriptor = com.logic.common.aidl.ILogicInterface
+[  17.957] getValue(isAccOn) = true
+[  17.960] getValue(isPowerOn) = true
+[  17.967] getValue(isInBackState) = false
+[  17.969] getValue(isIllon) = false
+[  17.971] getValue(isRunning) = true
+[  17.974] getValue(getAvmState) = 0
+[  17.980] getValue(isAuxState) = false
+[  17.987] getValue(getSourceId) = 4099
+[  17.989] getValue(getThirdSourceId) = 4096
+[  17.991] getValue(getFocusState) = 1
+[  17.993] source id 0: hasFocus=false focusState=-1
+[  17.995] source id 1: hasFocus=false focusState=-1
+[  17.997] source id 3: hasFocus=false focusState=-1
+[  18.000] source id 13: hasFocus=false focusState=-1
+[  18.009] source id 14: hasFocus=false focusState=-1
+[  18.011] registerLogicCallback OK (events will be logged as EVENT logic)
+[  18.012] 
+[  18.013] ===== 5. MCU SERVICE (zhonghong.mcu) =====
+[  18.016] descriptor = android.zhonghong.IMcuService
+[  18.023] getTest() = 100
+[  18.026] domain 1 read-all {"all":0}: ok=1 replyBytes=92 len=75 type=1 text={"class":"radio","result":{"HAVESIG":false,"RADIO_AREA":0},"status":"off"}
+[  18.029] domain 2 read-all {"all":0}: ok=1 replyBytes=968 len=950 type=1 text={"class":"setup","result":{"AM_LIMITER":10,"FM_LIMITER":9,"PART_NUM_DATA":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"PRODUCT_ID_DATA":[0,0,0,0,0,0,0,0,0,0,0,0,0],"SYS_ARMSAVE1":13,"SYS_ARMSAVE2":0,"SYS_ARMSAVE3":0,"SYS_AUDIOMODE":5,"SYS_BEEP":true,"SYS_BEEPVOL":2,"SYS_BTVOL":12,"SYS_DAY":31,"SYS_FLAG":128,"SYS_GPSVOL":10,"SYS_HOUR":5,"SYS_LOUD":false,"SYS_MID":7,"SYS_MINUTE":2,"SYS_MONTH":10,"SYS_MUTE":false,"SYS_SECOND":9,"SYS_SYSFLAG2":6,"SYS_TIME12H":false,"SYS_TTSVOL":0,"SYS_USER_BASS":7,"SYS_USER_MID":7,"SYS_USER_TREB":7,"SYS_VOL":8,"SYS_YEAR":56,"TFT1":true,"TUID_DATA":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"VIN_DATA":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"audiobal":7,"audiofade":7,"backlight":80,"bass":10,"canver":[0,0,0,0,0,0,0,0,0,0,0,0,0,0],"carspeed_volume":0,"defvol":25,"mcu103ver":[0,0,0,0,0,0,0,0,0],"mcuver":[12,28,37,232,7,1,6,209,52,0,0,5],"mcuverinside":[0,0,0,0,0,0,0,0,0,0,0],"setautobrighton":true,"treb":7},"status":"ok"}
+[  18.031] domain 3 read-all {"all":0}: ok=1 replyBytes=720 len=701 type=1 text={"class":"system","result":{"ACC_STATE":true,"BACK_SIGNAL":false,"BPOWER_ON":false,"CAR_RUN":true,"ILL_STATE":false,"MCU_SOURCE":15,"MCU_STATE":512,"NEED_SHOWDIALOG":0,"POWER_STATE":true,"RADAR_BEEP":0,"RESERVED_BLOCK":{"BLOCK_NO0":0,"BLOCK_NO1":0,"BLOCK_NO10":0,"BLOCK_NO11":0,"BLOCK_NO12":0,"BLOCK_NO13":0,"BLOCK_NO14":0,"BLOCK_NO15":0,"BLOCK_NO16":0,"BLOCK_NO17":0,"BLOCK_NO18":0,"BLOCK_NO19":0,"BLOCK_NO2":0,"BLOCK_NO20":0,"BLOCK_NO21":0,"BLOCK_NO22":0,"BLOCK_NO23":0,"BLOCK_NO24":0,"BLOCK_NO25":0,"BLOCK_NO26":0,"BLOCK_NO27":0,"BLOCK_NO28":0,"BLOCK_NO29":0,"BLOCK_NO3":0,"BLOCK_NO4":0,"BLOCK_NO5":0,"BLOCK_NO6":0,"BLOCK_NO7":0,"BLOCK_NO8":0,"BLOCK_NO9":0},"SOURCE_VAILFLAG":44417},"status":"ok"}
+[  18.032] domain 1 read WITHOUT input parcel (parcel variant): ok=0 replyBytes=4
+[  18.033] domain 8 offline-config {"all":0} cmd0: ok=1 replyBytes=48 len=32 type=0 text=                               
+[  18.034] keyed read domain 2 SYS_VOL: ok=1 replyBytes=20 len=2 type=1 text=8
+[  18.036] keyed read domain 2 SYS_MUTE: ok=1 replyBytes=24 len=6 type=1 text=false
+[  18.037] keyed read domain 2 brightness: ok=0 replyBytes=4
+[  18.037] keyed read domain 2 EQ1k: ok=0 replyBytes=4
+[  18.038] keyed read domain 3 ACC_STATE: ok=1 replyBytes=24 len=5 type=1 text=true
+[  18.039] keyed read domain 3 BACK_SIGNAL: ok=1 replyBytes=24 len=6 type=1 text=false
+[  18.040] keyed read domain 3 ILL_STATE: ok=1 replyBytes=24 len=6 type=1 text=false
+[  18.041] keyed read domain 3 MCU_SOURCE: ok=1 replyBytes=20 len=3 type=1 text=15
+[  18.041] keyed read domain 1 getfreq: ok=0 replyBytes=4
+[  18.042] 
+[  18.043] ===== 6. BLUETOOTH CONTROL SERVICE (zhbt_service) =====
+[  18.049] zhbt_service: NOT registered right now (connect/phone state may matter; re-run with a phone connected)
+[  18.049] sys.btcall = <unset>
+[  18.050] Settings.System bt_connected = true
+[  18.050] Settings.System key_bluetooth_state = 2
+[  18.050] Settings.System key_signal_state = 4
+[  18.051] Settings.System key_battery_state = 3
+[  18.052] 
+[  18.052] ===== 7. SYSTEM STATE BROKER (aidlserver) =====
+[  18.116] SystemStateService: bindService returned true
+[  18.230] descriptor = com.zhonghong.aidlib.state.SystemStateInterface
+[  18.231] getNetworkState = false
+[  18.232] getBluetoothConnectState = false
+[  18.232] getBluetoothInCallState = false
+[  18.233] getTuidNumber() call OK (value hidden)
+[  18.239] registerCallBack OK (events will be logged as EVENT state)
+[  18.242] SystemStateService2: bindService returned true
+[  18.249] SystemStateService2 descriptor = com.zhonghong.aidlib.state.SystemStateInterface2
+[  18.250] 
+[  18.250] ===== 8. USB MUSIC / VIDEO SERVICES =====
+[  18.255] UsbMusicService: bindService returned true
+[  18.263] descriptor = com.zhonghong.mediaaidl.usbmusic.IUsbMusicAidlInterface
+[  18.263] isPlaying = false
+[  18.264] getTitle -> length 62
+[  18.264] getArtist -> length 15
+[  18.264] getAlbum -> length 0
+[  18.266] registerDataChange OK (events logged as EVENT usbmusic)
+[  18.288] VideoService: bindService returned true
+[  20.078] 
+[  20.079] ===== RECORDING (do the actions, press the matching button after each) =====
+[  20.112]   Checksum_of_message_Airbag_1@722 236->204  Airbag_counter_for_live_check@722 14->12  
+[  20.112] SNAP(recording start) changed signals since previous snapshot: 2
+[  20.113]   RAW 564: 02 34 09 00 3F 00 02 24 03 00 02 00 AE 0A
+[  20.113]   RAW 577: 02 41 09 02 00 00 00 40 06 00 07 00 A0 0A
+[  20.117]   RAW 695: 02 B7 09 74 00 00 00 00 00 00 00 00 3B 0A
+[  20.120]   RAW 722: 02 D2 09 CC 00 0C 00 C0 00 00 00 00 7A 0A
+[  20.121]   RAW 800: 03 20 09 40 4C 16 02 00 00 00 00 00 D5 0A
+[  20.122]   RAW 963: 03 C3 09 00 40 00 04 00 10 00 00 00 28 0A
+[  20.123]   RAW 1042: 04 12 09 44 42 44 4D 3A 3E 3B 3B 00 29 0A
+[  20.124]   RAW 1043: 04 13 09 02 02 00 00 55 01 00 00 00 7F 0A
+[  20.125]   RAW 1218: 04 C2 09 00 27 00 54 3D 00 00 00 00 8C 0A
+[  20.126]   RAW 1219: 04 C3 09 40 4C 16 02 07 00 00 00 00 80 0A
+[  20.537] recording extended by 60 s
+[  20.661] recording extended by 60 s
+[  20.864] recording extended by 60 s
+[  21.061] recording extended by 60 s
+[  21.180] recording extended by 60 s
+[  21.343] recording extended by 60 s
+[  21.571] recording extended by 60 s
+[  21.676] recording extended by 60 s
+[  21.840] recording extended by 60 s
+[  22.072] recording extended by 60 s
+[  22.175] recording extended by 60 s
+[  22.323] recording extended by 60 s
+[  22.505] recording extended by 60 s
+[  22.670] recording extended by 60 s
+[  22.815] recording extended by 60 s
+[  22.999] recording extended by 60 s
+[  23.147] recording extended by 60 s
+[  23.290] VideoService: no onServiceConnected within 5000 ms
+[  23.300] 
+[  23.300] ===== 9. CONTENT PROVIDERS =====
+[  23.339] recording extended by 60 s
+[  23.369] content://com.zhonghong.bluetooth.provider.btinfo/btbase -> rows=1 columns=id,power,state,devname,talkname,talknum,micincar,micmute,signal,battery,
+[  23.372]    first row: id=0  power=<4 chars>  state=null  devname=null  talkname=null  talknum=null  micincar=null  micmute=null  signal=null  battery=null  
+[  23.385] content://com.zhonghong.bluetooth.provider.btinfo/btmusic -> rows=1 columns=id,title,artist,album,btmusicstate,duration,
+[  23.386]    first row: id=0  title=null  artist=null  album=null  btmusicstate=null  duration=null  
+[  23.390] content://com.zhonghong.bluetooth.provider.btinfo/btcontacts -> rows=0 columns=id,name,num,
+[  23.400] content://com.car.phone_data/contacts -> null cursor
+[  23.412] content://com.car.phone_data/call_log -> null cursor
+[  23.426] content://com.car.phone_data/contacts_favorite -> rows=0 columns=_id,address,name,number,pinyin,storage,type,
+[  23.439] content://com.zhonghong.media/audio -> rows=10 columns=_id,path,name,parent_path,title,album,artist,
+[  23.450] content://com.zhonghong.media/video -> rows=0 columns=_id,path,name,parent_path,
+[  23.463] content://com.zhonghong.media/image -> rows=0 columns=_id,path,name,parent_path,
+[  23.468] content://com.zhonghong.media/txt -> rows=0 columns=_id,path,name,parent_path,
+[  23.474] content://com.zhonghong.media/id3 -> rows=10 columns=path,title,album,artist,name,parent_path,uuid,file_size,
+[  23.476] recording extended by 60 s
+[  23.496] content://com.zhonghong.media/scan_state -> rows=1 columns=path,state,
+[  23.498]    first row: path=<15 chars>  state=2  
+[  23.502] 
+[  23.503] ===== 10. OVERLAY WINDOW (for an incoming-call popup) =====
+[  23.685] recording extended by 60 s
+[  23.809] recording extended by 60 s
+[  23.982] recording extended by 60 s
+[  24.175] recording extended by 60 s
+[  24.287] recording extended by 60 s
+[  24.458] recording extended by 60 s
+[  24.617] recording extended by 60 s
+[  24.788] recording extended by 60 s
+[  24.951] recording extended by 60 s
+[  25.025] overlay window: OK: TYPE_PHONE overlay added
+[  25.026] 
+[  25.026] ===== STATIC CHECKS FINISHED =====
+[  25.115] recording extended by 60 s
+[  25.129] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=19520 odoICM=19520
+[  25.149] recording extended by 150 s
+[  25.302] recording extended by 60 s
+[  25.447] recording extended by 60 s
+[  25.592] recording extended by 60 s
+[  25.799] recording extended by 60 s
+[  25.924] recording extended by 60 s
+[  26.089] recording extended by 60 s
+[  26.326] recording extended by 60 s
+[  26.422] recording extended by 60 s
+[  26.589] recording extended by 60 s
+[  26.752] recording extended by 60 s
+[  26.940] recording extended by 60 s
+[  27.087] recording extended by 60 s
+[  27.248] recording extended by 60 s
+[  27.417] recording extended by 60 s
+[  27.563] recording extended by 60 s
+[  27.705] recording extended by 60 s
+[  27.871] recording extended by 60 s
+[  30.131] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=19520 odoICM=19520
+[  30.731] recording extended by 60 s
+[  30.940] recording extended by 60 s
+[  31.086] recording extended by 60 s
+[  31.251] recording extended by 60 s
+[  31.450] recording extended by 60 s
+[  31.584] recording extended by 60 s
+[  31.709] recording extended by 60 s
+[  31.893] recording extended by 60 s
+[  32.039] recording extended by 60 s
+[  32.205] recording extended by 60 s
+[  32.369] recording extended by 60 s
+[  32.560] recording extended by 60 s
+[  32.704] recording extended by 60 s
+[  32.866] recording extended by 60 s
+[  33.055] recording extended by 60 s
+[  33.223] recording extended by 60 s
+[  33.363] recording extended by 60 s
+[  33.572] recording extended by 60 s
+[  33.716] recording extended by 60 s
+[  33.884] recording extended by 60 s
+[  34.117] recording extended by 60 s
+[  34.195] recording extended by 60 s
+[  34.383] recording extended by 60 s
+[  34.524] recording extended by 60 s
+[  34.694] recording extended by 60 s
+[  34.859] recording extended by 60 s
+[  35.043] recording extended by 60 s
+[  35.133] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=19520 odoICM=19520
+[  35.190] recording extended by 60 s
+[  35.336] recording extended by 60 s
+[  37.746] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[  37.751] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[  37.751] CAN-CHG BrakePedalStatus@577 0 -> 1
+[  37.944] CAN-CHG Transmission_EOL_Status@1218 39 -> 43
+[  37.944] CAN-CHG Shifter_Lever_Signals@1218 9 -> 10
+[  37.992] CAN-CHG Reversing_Lamp_Status@963 0 -> 1
+[  38.051] CAN-CHG Transmission_EOL_Status@1218 43 -> 47
+[  38.051] CAN-CHG Shifter_Lever_Signals@1218 10 -> 11
+[  38.113] CAN-CHG Reversing_Lamp_Status@963 1 -> 0
+[  38.310] CAN-CHG Transmission_EOL_Status@1218 47 -> 51
+[  38.310] CAN-CHG Shifter_Lever_Signals@1218 11 -> 12
+[  39.921] CAN-CHG Hand_Brake_Switch_Status@564 1 -> 0
+[  40.182] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=12 odoBCM=19520 odoICM=19520
+[  41.635] CAN-CHG BrakePedalStatus@577 1 -> 0
+[  41.712] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[  41.733] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[  45.188] SAMPLE back_state=false sys.btcall=<unset> speed@1218=6 lever@1218=12 odoBCM=19520 odoICM=19520
+[  49.083] CAN-CHG FLTyrePressureValue@1042 68 -> 67
+[  50.192] SAMPLE back_state=false sys.btcall=<unset> speed@1218=17 lever@1218=12 odoBCM=19531 odoICM=19528
+[  55.246] SAMPLE back_state=false sys.btcall=<unset> speed@1218=23 lever@1218=12 odoBCM=19557 odoICM=19551
+[  57.609] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[  57.616] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[  57.649] CAN-CHG BrakePedalStatus@577 0 -> 1
+[  59.545] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[  59.599] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[  59.658] CAN-CHG BrakePedalStatus@577 1 -> 0
+[  60.249] SAMPLE back_state=false sys.btcall=<unset> speed@1218=14 lever@1218=12 odoBCM=19587 odoICM=19582
+[  65.251] SAMPLE back_state=false sys.btcall=<unset> speed@1218=10 lever@1218=12 odoBCM=19601 odoICM=19599
+[  69.202] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[  69.213] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[  69.263] CAN-CHG BrakePedalStatus@577 0 -> 1
+[  70.296] SAMPLE back_state=false sys.btcall=<unset> speed@1218=15 lever@1218=12 odoBCM=19620 odoICM=19615
+[  70.357] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[  70.358] CAN-CHG BrakePedalStatus@577 1 -> 0
+[  70.359] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[  75.298] SAMPLE back_state=false sys.btcall=<unset> speed@1218=28 lever@1218=12 odoBCM=19643 odoICM=19637
+[  76.187] CAN-CHG Transmission_EOL_Status@1218 51 -> 55
+[  76.187] CAN-CHG Shifter_Lever_Signals@1218 12 -> 13
+[  79.858] CAN-CHG Transmission_EOL_Status@1218 55 -> 19
+[  79.858] CAN-CHG Shifter_Lever_Signals@1218 13 -> 4
+[  80.301] SAMPLE back_state=false sys.btcall=<unset> speed@1218=46 lever@1218=4 odoBCM=19688 odoICM=19677
+[  84.461] CAN-CHG Transmission_EOL_Status@1218 19 -> 15
+[  84.461] CAN-CHG Shifter_Lever_Signals@1218 4 -> 3
+[  85.379] SAMPLE back_state=false sys.btcall=<unset> speed@1218=42 lever@1218=3 odoBCM=19752 odoICM=19739
+[  90.381] SAMPLE back_state=false sys.btcall=<unset> speed@1218=31 lever@1218=3 odoBCM=19806 odoICM=19797
+[  92.509] CAN-CHG Transmission_EOL_Status@1218 15 -> 11
+[  92.509] CAN-CHG Shifter_Lever_Signals@1218 3 -> 2
+[  94.202] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[  94.235] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[  94.235] CAN-CHG BrakePedalStatus@577 0 -> 1
+[  95.383] SAMPLE back_state=false sys.btcall=<unset> speed@1218=13 lever@1218=2 odoBCM=19846 odoICM=19840
+[  95.758] CAN-CHG Transmission_EOL_Status@1218 11 -> 51
+[  95.758] CAN-CHG Shifter_Lever_Signals@1218 2 -> 12
+[  98.348] CAN-CHG Transmission_EOL_Status@1218 51 -> 47
+[  98.348] CAN-CHG Shifter_Lever_Signals@1218 12 -> 11
+[ 100.425] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=11 odoBCM=19854 odoICM=19854
+[ 104.191] CAN-CHG RRTyreTemperatureValue@1042 59 -> 60
+[ 105.427] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=11 odoBCM=19854 odoICM=19854
+[ 110.429] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=11 odoBCM=19854 odoICM=19854
+[ 110.487] CAN-CHG FLTyrePressureValue@1042 67 -> 68
+[ 110.488] CAN-CHG FLTyreTemperatureValue@1042 58 -> 59
+[ 115.485] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=11 odoBCM=19854 odoICM=19854
+[ 120.488] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=11 odoBCM=19854 odoICM=19854
+[ 125.490] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=11 odoBCM=19854 odoICM=19854
+[ 128.969] CAN-CHG Transmission_EOL_Status@1218 47 -> 51
+[ 128.969] CAN-CHG Shifter_Lever_Signals@1218 11 -> 12
+[ 130.552] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=12 odoBCM=19854 odoICM=19854
+[ 135.554] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=12 odoBCM=19854 odoICM=19854
+[ 140.556] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=12 odoBCM=19854 odoICM=19854
+[ 142.078] CAN-CHG RLtyreTemperatureValue@1042 59 -> 60
+[ 145.591] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=12 odoBCM=19854 odoICM=19854
+[ 149.597] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[ 149.598] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 149.623] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 149.637] CAN-CHG LH_Indicator_Switch_Status@564 0 -> 1
+[ 149.637] CAN-CHG Indicator_Lamps_Command@564 0 -> 2
+[ 149.943] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[ 149.944] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 150.025] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 150.133] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[ 150.152] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[ 150.152] CAN-CHG BrakePedalStatus@577 1 -> 0
+[ 150.327] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[ 150.328] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 150.368] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 150.593] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=12 odoBCM=19854 odoICM=19854
+[ 150.659] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[ 150.659] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 150.740] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 151.034] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[ 151.035] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 151.052] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 151.435] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[ 151.440] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 151.454] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 151.763] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[ 151.763] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 151.797] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 152.143] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[ 152.483] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[ 152.483] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 152.531] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 152.834] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[ 152.834] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 152.879] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 153.218] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[ 153.220] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 153.266] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 153.566] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[ 153.566] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 153.642] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 153.948] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[ 154.284] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[ 154.284] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 154.334] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 154.642] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[ 154.648] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 154.676] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 155.004] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[ 155.004] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 155.056] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 155.353] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[ 155.354] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 155.409] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 155.598] SAMPLE back_state=false sys.btcall=<unset> speed@1218=13 lever@1218=12 odoBCM=19856 odoICM=19856
+[ 155.746] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[ 155.837] CAN-CHG LH_Indicator_Switch_Status@564 1 -> 0
+[ 155.837] CAN-CHG Indicator_Lamps_Command@564 2 -> 0
+[ 157.714] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[ 157.734] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[ 157.735] CAN-CHG BrakePedalStatus@577 0 -> 1
+[ 158.305] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[ 158.358] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[ 158.361] CAN-CHG BrakePedalStatus@577 1 -> 0
+[ 160.679] SAMPLE back_state=false sys.btcall=<unset> speed@1218=6 lever@1218=12 odoBCM=19872 odoICM=19872
+[ 164.531] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[ 164.545] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[ 164.545] CAN-CHG BrakePedalStatus@577 0 -> 1
+[ 165.010] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[ 165.026] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[ 165.026] CAN-CHG BrakePedalStatus@577 1 -> 0
+[ 165.682] SAMPLE back_state=false sys.btcall=<unset> speed@1218=5 lever@1218=12 odoBCM=19876 odoICM=19876
+[ 170.684] SAMPLE back_state=false sys.btcall=<unset> speed@1218=35 lever@1218=12 odoBCM=19892 odoICM=19892
+[ 175.744] SAMPLE back_state=false sys.btcall=<unset> speed@1218=62 lever@1218=12 odoBCM=19952 odoICM=19952
+[ 180.747] SAMPLE back_state=false sys.btcall=<unset> speed@1218=65 lever@1218=12 odoBCM=20041 odoICM=20041
+[ 185.749] SAMPLE back_state=false sys.btcall=<unset> speed@1218=62 lever@1218=12 odoBCM=20132 odoICM=20132
+[ 190.784] SAMPLE back_state=false sys.btcall=<unset> speed@1218=58 lever@1218=12 odoBCM=20219 odoICM=20219
+[ 194.101] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[ 194.139] CAN-CHG BrakePedalStatus@577 0 -> 1
+[ 194.236] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[ 195.786] SAMPLE back_state=false sys.btcall=<unset> speed@1218=46 lever@1218=12 odoBCM=20300 odoICM=20300
+[ 200.788] SAMPLE back_state=false sys.btcall=<unset> speed@1218=28 lever@1218=12 odoBCM=20361 odoICM=20361
+[ 200.823] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[ 200.916] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[ 200.916] CAN-CHG BrakePedalStatus@577 1 -> 0
+[ 204.010] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[ 204.127] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[ 204.132] CAN-CHG BrakePedalStatus@577 0 -> 1
+[ 205.849] SAMPLE back_state=false sys.btcall=<unset> speed@1218=16 lever@1218=12 odoBCM=20399 odoICM=20399
+[ 205.888] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[ 205.931] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[ 205.982] CAN-CHG BrakePedalStatus@577 1 -> 0
+[ 210.135] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[ 210.227] CAN-CHG LH_Indicator_Switch_Status@564 0 -> 1
+[ 210.228] CAN-CHG Indicator_Lamps_Command@564 0 -> 2
+[ 210.475] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[ 210.476] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 210.535] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 210.624] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[ 210.631] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[ 210.798] CAN-CHG BrakePedalStatus@577 0 -> 1
+[ 210.854] SAMPLE back_state=false sys.btcall=<unset> speed@1218=22 lever@1218=12 odoBCM=20423 odoICM=20423
+[ 210.872] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[ 211.211] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[ 211.549] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[ 211.549] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 211.607] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 211.917] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[ 211.919] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 211.957] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 212.268] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[ 212.269] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 212.336] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 212.662] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[ 212.662] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 212.682] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 212.994] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[ 212.994] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 213.036] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 213.381] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[ 213.381] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 213.414] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 213.742] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[ 213.742] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 213.792] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 213.998] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[ 214.040] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[ 214.072] CAN-CHG BrakePedalStatus@577 1 -> 0
+[ 214.125] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[ 214.491] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[ 214.824] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[ 214.828] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 214.856] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 215.150] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[ 215.150] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 215.202] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 215.521] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[ 215.522] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 215.546] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 215.858] SAMPLE back_state=false sys.btcall=<unset> speed@1218=6 lever@1218=12 odoBCM=20445 odoICM=20445
+[ 215.908] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[ 216.251] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[ 216.615] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[ 216.616] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 216.640] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 216.950] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[ 216.950] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 217.018] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 217.336] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[ 217.337] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 217.362] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 217.684] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[ 217.684] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 217.698] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 218.011] CAN-CHG Right_Indicator_Lamp_Status@963 0 -> 1
+[ 218.012] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 218.045] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 218.080] CAN-CHG LH_Indicator_Switch_Status@564 1 -> 0
+[ 218.080] CAN-CHG RH_Indicator_Switch_Status@564 0 -> 1
+[ 218.082] CAN-CHG Indicator_Lamps_Command@564 2 -> 1
+[ 218.386] CAN-CHG Right_Indicator_Lamp_Status@963 1 -> 0
+[ 218.386] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 218.410] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 218.717] CAN-CHG Right_Indicator_Lamp_Status@963 0 -> 1
+[ 218.717] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 218.755] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 219.051] CAN-CHG Right_Indicator_Lamp_Status@963 1 -> 0
+[ 219.051] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 219.170] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 219.427] CAN-CHG Right_Indicator_Lamp_Status@963 0 -> 1
+[ 219.429] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 219.522] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 219.796] CAN-CHG Right_Indicator_Lamp_Status@963 1 -> 0
+[ 219.797] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 219.880] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 220.189] CAN-CHG Right_Indicator_Lamp_Status@963 0 -> 1
+[ 220.189] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 220.230] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 220.556] CAN-CHG Right_Indicator_Lamp_Status@963 1 -> 0
+[ 220.863] CAN-CHG Right_Indicator_Lamp_Status@963 0 -> 1
+[ 220.869] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 220.879] CAN-CHG Right_Indicator_Lamp_Status@963 0 -> 1
+[ 220.879] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 220.951] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 220.976] SAMPLE back_state=false sys.btcall=<unset> speed@1218=18 lever@1218=12 odoBCM=20457 odoICM=20457
+[ 221.241] CAN-CHG Right_Indicator_Lamp_Status@963 1 -> 0
+[ 221.242] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 221.326] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 221.612] CAN-CHG Right_Indicator_Lamp_Status@963 0 -> 1
+[ 221.612] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 221.686] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 221.945] CAN-CHG Right_Indicator_Lamp_Status@963 1 -> 0
+[ 221.945] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 222.060] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[ 222.060] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 222.142] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[ 222.149] CAN-CHG BrakePedalStatus@577 0 -> 1
+[ 222.315] CAN-CHG Right_Indicator_Lamp_Status@963 0 -> 1
+[ 222.315] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 222.378] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 222.675] CAN-CHG Right_Indicator_Lamp_Status@963 1 -> 0
+[ 222.676] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 222.734] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 223.060] CAN-CHG Right_Indicator_Lamp_Status@963 0 -> 1
+[ 223.061] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 223.087] CAN-CHG BrakePedalStatus@577 1 -> 0
+[ 223.133] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[ 223.135] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 223.159] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[ 223.406] CAN-CHG Right_Indicator_Lamp_Status@963 1 -> 0
+[ 223.406] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 223.455] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 223.745] CAN-CHG Right_Indicator_Lamp_Status@963 0 -> 1
+[ 223.748] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 223.842] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 224.149] CAN-CHG Right_Indicator_Lamp_Status@963 1 -> 0
+[ 224.150] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 224.196] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 224.427] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[ 224.433] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[ 224.433] CAN-CHG BrakePedalStatus@577 0 -> 1
+[ 224.514] CAN-CHG Right_Indicator_Lamp_Status@963 0 -> 1
+[ 224.862] CAN-CHG Right_Indicator_Lamp_Status@963 1 -> 0
+[ 224.863] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 224.915] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 225.216] CAN-CHG Right_Indicator_Lamp_Status@963 0 -> 1
+[ 225.216] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 225.266] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 225.550] CAN-CHG Right_Indicator_Lamp_Status@963 1 -> 0
+[ 225.550] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 225.639] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 225.828] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[ 225.850] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[ 225.850] CAN-CHG BrakePedalStatus@577 1 -> 0
+[ 225.984] SAMPLE back_state=false sys.btcall=<unset> speed@1218=7 lever@1218=12 odoBCM=20478 odoICM=20478
+[ 226.024] CAN-CHG Right_Indicator_Lamp_Status@963 0 -> 1
+[ 226.286] CAN-CHG Right_Indicator_Lamp_Status@963 1 -> 0
+[ 226.286] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 226.320] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 226.650] CAN-CHG Right_Indicator_Lamp_Status@963 0 -> 1
+[ 226.650] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 226.727] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 227.038] CAN-CHG Right_Indicator_Lamp_Status@963 1 -> 0
+[ 227.333] CAN-CHG Right_Indicator_Lamp_Status@963 0 -> 1
+[ 227.334] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 227.421] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 227.723] CAN-CHG Right_Indicator_Lamp_Status@963 1 -> 0
+[ 227.723] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 227.798] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 227.848] CAN-CHG RH_Indicator_Switch_Status@564 1 -> 0
+[ 227.848] CAN-CHG Indicator_Lamps_Command@564 1 -> 0
+[ 228.206] CAN-CHG RRTyrePressureValue@1042 77 -> 78
+[ 230.986] SAMPLE back_state=false sys.btcall=<unset> speed@1218=6 lever@1218=12 odoBCM=20487 odoICM=20487
+[ 236.036] SAMPLE back_state=false sys.btcall=<unset> speed@1218=7 lever@1218=12 odoBCM=20495 odoICM=20494
+[ 237.508] CAN-CHG FRTyrePressureValue@1042 66 -> 67
+[ 238.200] CAN-CHG Horn_Relay__Status@963 0 -> 1
+[ 238.233] CAN-CHG Horn_Switch_Status@564 0 -> 1
+[ 238.285] CAN-CHG Horn_Relay__Status@963 1 -> 0
+[ 238.330] CAN-CHG Horn_Switch_Status@564 1 -> 0
+[ 241.038] SAMPLE back_state=false sys.btcall=<unset> speed@1218=6 lever@1218=12 odoBCM=20503 odoICM=20502
+[ 243.315] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[ 243.343] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[ 243.343] CAN-CHG BrakePedalStatus@577 0 -> 1
+[ 243.902] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[ 243.921] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[ 243.980] CAN-CHG BrakePedalStatus@577 1 -> 0
+[ 246.040] SAMPLE back_state=false sys.btcall=<unset> speed@1218=4 lever@1218=12 odoBCM=20507 odoICM=20507
+[ 247.628] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[ 247.635] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[ 247.636] CAN-CHG BrakePedalStatus@577 0 -> 1
+[ 248.257] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[ 248.275] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[ 248.276] CAN-CHG BrakePedalStatus@577 1 -> 0
+[ 251.118] SAMPLE back_state=false sys.btcall=<unset> speed@1218=4 lever@1218=12 odoBCM=20511 odoICM=20511
+[ 251.739] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[ 251.851] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[ 251.911] CAN-CHG BrakePedalStatus@577 0 -> 1
+[ 252.533] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[ 252.600] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[ 252.649] CAN-CHG BrakePedalStatus@577 1 -> 0
+[ 252.921] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[ 252.931] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[ 252.931] CAN-CHG BrakePedalStatus@577 0 -> 1
+[ 254.392] CAN-CHG Transmission_EOL_Status@1218 51 -> 47
+[ 254.392] CAN-CHG Shifter_Lever_Signals@1218 12 -> 11
+[ 254.581] CAN-CHG Transmission_EOL_Status@1218 47 -> 43
+[ 254.581] CAN-CHG Shifter_Lever_Signals@1218 11 -> 10
+[ 254.630] CAN-CHG Reversing_Lamp_Status@963 0 -> 1
+[ 254.887] EVENT logic: onBackStateChanged | true | null
+[ 255.004] EVENT state: back = 1
+[ 255.908] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[ 255.928] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[ 255.928] CAN-CHG BrakePedalStatus@577 1 -> 0
+[ 256.127] SAMPLE back_state=true sys.btcall=<unset> speed@1218=0 lever@1218=10 odoBCM=20515 odoICM=20515
+[ 257.215] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[ 257.236] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[ 257.375] CAN-CHG BrakePedalStatus@577 0 -> 1
+[ 257.939] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[ 258.061] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[ 258.158] CAN-CHG BrakePedalStatus@577 1 -> 0
+[ 258.825] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[ 258.839] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[ 258.840] CAN-CHG BrakePedalStatus@577 0 -> 1
+[ 259.825] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[ 259.844] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[ 259.845] CAN-CHG BrakePedalStatus@577 1 -> 0
+[ 260.752] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[ 260.771] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[ 260.771] CAN-CHG BrakePedalStatus@577 0 -> 1
+[ 261.051] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[ 261.108] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[ 261.109] CAN-CHG BrakePedalStatus@577 1 -> 0
+[ 261.137] SAMPLE back_state=true sys.btcall=<unset> speed@1218=1 lever@1218=10 odoBCM=20515 odoICM=20515
+[ 261.668] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[ 261.710] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[ 261.712] CAN-CHG BrakePedalStatus@577 0 -> 1
+[ 263.625] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[ 263.659] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[ 263.660] CAN-CHG BrakePedalStatus@577 1 -> 0
+[ 263.980] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[ 264.030] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[ 264.030] CAN-CHG BrakePedalStatus@577 0 -> 1
+[ 264.945] CAN-CHG BrakePedalStatus@577 1 -> 0
+[ 265.029] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[ 265.040] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[ 266.412] SAMPLE back_state=true sys.btcall=<unset> speed@1218=1 lever@1218=10 odoBCM=20516 odoICM=20516
+[ 266.852] CAN-CHG BrakePedalStatus@577 0 -> 1
+[ 266.905] CAN-CHG RLTyrePressureValue@1042 68 -> 69
+[ 267.036] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[ 267.092] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[ 267.627] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[ 267.668] CAN-CHG BrakePedalStatus@577 1 -> 0
+[ 267.900] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[ 268.449] CAN-CHG BrakePedalStatus@577 0 -> 1
+[ 268.531] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[ 268.585] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[ 269.140] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[ 269.202] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[ 269.202] CAN-CHG BrakePedalStatus@577 1 -> 0
+[ 270.242] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[ 270.256] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[ 270.257] CAN-CHG BrakePedalStatus@577 0 -> 1
+[ 270.941] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[ 271.053] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[ 271.053] CAN-CHG BrakePedalStatus@577 1 -> 0
+[ 271.416] SAMPLE back_state=true sys.btcall=<unset> speed@1218=0 lever@1218=10 odoBCM=20518 odoICM=20518
+[ 272.170] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[ 272.199] CAN-CHG BrakePedalStatus@577 0 -> 1
+[ 272.270] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[ 272.573] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[ 272.659] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[ 272.659] CAN-CHG BrakePedalStatus@577 1 -> 0
+[ 273.345] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[ 273.407] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[ 273.407] CAN-CHG BrakePedalStatus@577 0 -> 1
+[ 273.605] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[ 273.705] CAN-CHG BrakePedalStatus@577 1 -> 0
+[ 273.804] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[ 276.049] CAN-CHG BrakePedalStatus@577 0 -> 1
+[ 276.132] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[ 276.172] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[ 276.419] SAMPLE back_state=true sys.btcall=<unset> speed@1218=1 lever@1218=10 odoBCM=20518 odoICM=20518
+[ 276.474] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[ 276.498] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[ 276.499] CAN-CHG BrakePedalStatus@577 1 -> 0
+[ 276.860] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 277.047] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 277.371] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 277.774] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 277.852] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 277.961] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[ 277.962] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 278.090] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 278.190] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 278.337] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 278.366] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[ 278.367] CAN-CHG BrakePedalStatus@577 0 -> 1
+[ 278.500] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 278.575] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 278.655] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 278.789] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 278.980] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[ 278.980] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 279.041] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 279.149] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 279.157] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[ 279.183] CAN-CHG BrakePedalStatus@577 1 -> 0
+[ 279.531] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[ 279.531] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 279.605] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 279.701] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 279.787] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 279.974] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[ 279.975] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 280.118] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 280.201] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 280.214] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 280.404] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 280.505] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 280.548] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 280.567] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 280.647] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 280.723] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 280.774] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 281.007] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 281.059] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 281.145] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 281.249] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 281.407] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[ 281.407] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 281.507] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 281.586] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 281.633] SAMPLE back_state=true sys.btcall=<unset> speed@1218=0 lever@1218=10 odoBCM=20520 odoICM=20520
+[ 281.685] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 281.778] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 282.020] CAN-CHG Reversing_Lamp_Status@963 1 -> 0
+[ 282.021] CAN-CHG Transmission_EOL_Status@1218 43 -> 47
+[ 282.021] CAN-CHG Shifter_Lever_Signals@1218 10 -> 11
+[ 282.129] EVENT logic: onBackStateChanged | false | null
+[ 282.157] CAN-CHG Transmission_EOL_Status@1218 47 -> 51
+[ 282.158] CAN-CHG Shifter_Lever_Signals@1218 11 -> 12
+[ 282.163] EVENT state: back = 0
+[ 282.310] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[ 282.311] CAN-CHG BrakePedalStatus@577 0 -> 1
+[ 282.577] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[ 282.828] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[ 282.828] CAN-CHG BrakePedalStatus@577 1 -> 0
+[ 284.018] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[ 284.045] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[ 284.045] CAN-CHG BrakePedalStatus@577 0 -> 1
+[ 284.431] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[ 284.532] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[ 284.605] CAN-CHG BrakePedalStatus@577 1 -> 0
+[ 286.417] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[ 286.432] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[ 286.538] CAN-CHG BrakePedalStatus@577 0 -> 1
+[ 286.635] SAMPLE back_state=false sys.btcall=<unset> speed@1218=1 lever@1218=12 odoBCM=20520 odoICM=20520
+[ 286.709] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[ 286.756] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[ 286.756] CAN-CHG BrakePedalStatus@577 1 -> 0
+[ 288.217] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[ 288.262] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[ 288.263] CAN-CHG BrakePedalStatus@577 0 -> 1
+[ 289.282] CAN-CHG Transmission_EOL_Status@1218 51 -> 47
+[ 289.282] CAN-CHG Shifter_Lever_Signals@1218 12 -> 11
+[ 289.557] CAN-CHG Transmission_EOL_Status@1218 47 -> 43
+[ 289.558] CAN-CHG Shifter_Lever_Signals@1218 11 -> 10
+[ 289.619] CAN-CHG Reversing_Lamp_Status@963 0 -> 1
+[ 289.835] EVENT logic: onBackStateChanged | true | null
+[ 289.854] EVENT state: back = 1
+[ 290.054] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[ 290.126] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[ 290.126] CAN-CHG BrakePedalStatus@577 1 -> 0
+[ 290.934] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[ 290.958] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[ 290.959] CAN-CHG BrakePedalStatus@577 0 -> 1
+[ 291.524] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[ 291.567] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[ 291.568] CAN-CHG BrakePedalStatus@577 1 -> 0
+[ 291.638] SAMPLE back_state=true sys.btcall=<unset> speed@1218=0 lever@1218=10 odoBCM=20520 odoICM=20520
+[ 293.846] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[ 293.945] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[ 293.958] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[ 293.959] CAN-CHG BrakePedalStatus@577 0 -> 1
+[ 294.119] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[ 294.119] CAN-CHG BrakePedalStatus@577 1 -> 0
+[ 294.623] CAN-CHG FLTyrePressureValue@1042 68 -> 71
+[ 294.623] CAN-CHG FLTyreTemperatureValue@1042 59 -> 60
+[ 295.534] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[ 295.547] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[ 295.548] CAN-CHG BrakePedalStatus@577 0 -> 1
+[ 295.984] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[ 296.082] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[ 296.082] CAN-CHG BrakePedalStatus@577 1 -> 0
+[ 296.748] SAMPLE back_state=true sys.btcall=<unset> speed@1218=0 lever@1218=10 odoBCM=20521 odoICM=20521
+[ 298.432] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[ 298.446] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[ 298.446] CAN-CHG BrakePedalStatus@577 0 -> 1
+[ 298.640] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[ 298.664] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[ 298.664] CAN-CHG BrakePedalStatus@577 1 -> 0
+[ 299.117] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[ 299.206] CAN-CHG BrakePedalStatus@577 0 -> 1
+[ 299.250] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[ 299.831] CAN-CHG BrakePedalStatus@577 1 -> 0
+[ 299.953] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[ 299.968] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[ 301.465] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 301.576] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 301.719] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 301.759] SAMPLE back_state=true sys.btcall=<unset> speed@1218=0 lever@1218=10 odoBCM=20521 odoICM=20521
+[ 301.853] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 301.928] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 302.092] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 302.961] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[ 303.143] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[ 303.773] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[ 303.805] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[ 303.805] CAN-CHG BrakePedalStatus@577 0 -> 1
+[ 304.153] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[ 304.342] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[ 304.343] CAN-CHG BrakePedalStatus@577 1 -> 0
+[ 306.761] SAMPLE back_state=true sys.btcall=<unset> speed@1218=0 lever@1218=10 odoBCM=20523 odoICM=20523
+[ 309.042] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[ 309.047] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[ 309.047] CAN-CHG BrakePedalStatus@577 0 -> 1
+[ 309.460] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[ 309.466] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[ 309.466] CAN-CHG BrakePedalStatus@577 1 -> 0
+[ 309.905] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[ 309.926] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[ 309.926] CAN-CHG BrakePedalStatus@577 0 -> 1
+[ 310.181] CAN-CHG AmbientTemp@695 116 -> 118
+[ 310.365] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[ 310.435] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[ 310.435] CAN-CHG BrakePedalStatus@577 1 -> 0
+[ 311.847] SAMPLE back_state=true sys.btcall=<unset> speed@1218=0 lever@1218=10 odoBCM=20523 odoICM=20523
+[ 312.502] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[ 312.511] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[ 312.515] CAN-CHG BrakePedalStatus@577 0 -> 1
+[ 313.077] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[ 313.089] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[ 313.089] CAN-CHG BrakePedalStatus@577 1 -> 0
+[ 314.621] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[ 314.635] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[ 314.636] CAN-CHG BrakePedalStatus@577 0 -> 1
+[ 316.851] SAMPLE back_state=true sys.btcall=<unset> speed@1218=0 lever@1218=10 odoBCM=20523 odoICM=20523
+[ 317.083] CAN-CHG Transmission_EOL_Status@1218 43 -> 39
+[ 317.084] CAN-CHG Shifter_Lever_Signals@1218 10 -> 9
+[ 317.152] EVENT logic: onBackStateChanged | false | null
+[ 317.173] EVENT state: back = 0
+[ 317.197] CAN-CHG Reversing_Lamp_Status@963 1 -> 0
+[ 320.537] CAN-CHG Hand_Brake_Switch_Status@564 0 -> 1
+[ 321.853] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 321.905] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[ 321.936] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[ 321.936] CAN-CHG BrakePedalStatus@577 1 -> 0
+[ 324.895] CAN-CHG Driver_seatbelt_lock_recognition@722 0 -> 1
+[ 324.928] CAN-CHG Driver_Seat_Belt_Switch_Status@564 0 -> 1
+[ 326.911] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 331.913] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 332.813] CAN-CHG Driver_Seat_Belt_Switch_Status@564 1 -> 0
+[ 332.895] CAN-CHG Driver_seatbelt_lock_recognition@722 1 -> 0
+[ 336.915] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 337.123] CAN-CHG Driver_seatbelt_lock_recognition@722 0 -> 1
+[ 337.144] CAN-CHG Driver_Seat_Belt_Switch_Status@564 0 -> 1
+[ 341.960] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 346.962] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 351.964] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 354.341] CAN-CHG Position_Lamp_Status@963 0 -> 1
+[ 354.341] CAN-CHG Daylight_Status@963 1 -> 0
+[ 354.341] CAN-CHG Start_Stop_Green_LED_Output_Status@963 1 -> 0
+[ 354.429] CAN-CHG Position_Lamp_Switch_Status@564 0 -> 1
+[ 354.635] EVENT logic: onIllStateChanged | true | null
+[ 357.010] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 358.531] CAN-CHG Low_Beam_Status@963 0 -> 1
+[ 358.537] CAN-CHG Low_Beam_Switch_Status@564 0 -> 1
+[ 361.293] CAN-CHG FRTyreTemperatureValue@1042 62 -> 63
+[ 362.013] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 363.510] CAN-CHG High_Beam_Status@963 0 -> 1
+[ 363.544] CAN-CHG High_Beam_Lamp_Switch_Status@564 0 -> 1
+[ 363.594] CAN-CHG Low_Beam_Status@963 1 -> 0
+[ 363.629] CAN-CHG Low_Beam_Switch_Status@564 1 -> 0
+[ 367.015] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 369.814] CAN-CHG Low_Beam_Status@963 0 -> 1
+[ 369.814] CAN-CHG High_Beam_Status@963 1 -> 0
+[ 369.828] CAN-CHG Low_Beam_Switch_Status@564 0 -> 1
+[ 369.829] CAN-CHG High_Beam_Lamp_Switch_Status@564 1 -> 0
+[ 371.016] CAN-CHG Low_Beam_Status@963 1 -> 0
+[ 371.029] CAN-CHG Low_Beam_Switch_Status@564 1 -> 0
+[ 371.330] CAN-CHG Position_Lamp_Status@963 1 -> 0
+[ 371.334] CAN-CHG Daylight_Status@963 0 -> 1
+[ 371.334] CAN-CHG Start_Stop_Green_LED_Output_Status@963 0 -> 1
+[ 371.353] CAN-CHG Position_Lamp_Switch_Status@564 1 -> 0
+[ 371.634] EVENT logic: onIllStateChanged | false | null
+[ 372.067] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 377.070] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 382.072] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 387.123] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 391.609] CAN-CHG RLtyreTemperatureValue@1042 60 -> 61
+[ 392.129] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 397.132] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 399.737] CAN-CHG Position_Lamp_Status@963 0 -> 1
+[ 399.737] CAN-CHG Daylight_Status@963 1 -> 0
+[ 399.740] CAN-CHG Start_Stop_Green_LED_Output_Status@963 1 -> 0
+[ 399.748] CAN-CHG Position_Lamp_Switch_Status@564 0 -> 1
+[ 399.842] CAN-CHG Low_Beam_Status@963 0 -> 1
+[ 399.851] CAN-CHG Low_Beam_Switch_Status@564 0 -> 1
+[ 400.039] EVENT logic: onIllStateChanged | true | null
+[ 401.231] CAN-CHG Front_Fog_Lamp_Status@963 0 -> 1
+[ 401.244] CAN-CHG Front_Fog_Lamp_Switch_Status@564 0 -> 1
+[ 401.443] CAN-CHG Front_Fog_Lamp_Switch_Status@564 1 -> 0
+[ 402.175] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 403.449] CAN-CHG Rear_Fog_Lamp_Status@963 0 -> 1
+[ 403.449] CAN-CHG Anti_theft_Indicator_Output_Status@963 0 -> 1
+[ 403.458] CAN-CHG Rear_Fog_Lamp_Switch_Status@564 0 -> 1
+[ 403.725] CAN-CHG Rear_Fog_Lamp_Switch_Status@564 1 -> 0
+[ 407.177] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 409.039] CAN-CHG Low_Beam_Status@963 1 -> 0
+[ 409.041] CAN-CHG Rear_Fog_Lamp_Status@963 1 -> 0
+[ 409.041] CAN-CHG Anti_theft_Indicator_Output_Status@963 1 -> 0
+[ 409.042] CAN-CHG Low_Beam_Switch_Status@564 1 -> 0
+[ 409.042] CAN-CHG Low_Beam_Status@963 1 -> 0
+[ 409.043] CAN-CHG Rear_Fog_Lamp_Status@963 1 -> 0
+[ 409.043] CAN-CHG Anti_theft_Indicator_Output_Status@963 1 -> 0
+[ 409.234] CAN-CHG Position_Lamp_Status@963 1 -> 0
+[ 409.235] CAN-CHG Front_Fog_Lamp_Status@963 1 -> 0
+[ 409.235] CAN-CHG Daylight_Status@963 0 -> 1
+[ 409.235] CAN-CHG Start_Stop_Green_LED_Output_Status@963 0 -> 1
+[ 409.243] CAN-CHG Position_Lamp_Switch_Status@564 1 -> 0
+[ 409.527] EVENT logic: onIllStateChanged | false | null
+[ 412.179] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 413.048] EVENT state: volume = 9
+[ 413.420] EVENT state: volume = 10
+[ 413.670] EVENT state: volume = 11
+[ 413.945] EVENT state: volume = 12
+[ 414.296] CAN-CHG RRTyreTemperatureValue@1042 60 -> 61
+[ 414.560] EVENT state: volume = 13
+[ 415.111] EVENT state: volume = 14
+[ 417.203] CAN-CHG FLTyrePressureValue@1042 71 -> 69
+[ 417.224] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 422.227] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 427.229] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 430.919] EVENT state: volume = 13
+[ 432.289] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 432.384] EVENT state: volume = 12
+[ 434.775] EVENT state: volume = 11
+[ 437.300] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 442.303] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 447.803] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 452.805] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 454.009] CAN-CHG RLtyreTemperatureValue@1042 61 -> 60
+[ 457.807] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 462.852] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 466.408] EVENT state: volume = 10
+[ 467.059] EVENT state: volume = 11
+[ 467.230] EVENT state: volume = 12
+[ 467.545] EVENT state: volume = 13
+[ 467.863] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 467.864] EVENT state: volume = 14
+[ 472.866] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 477.921] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 482.925] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 487.927] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 492.971] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 497.974] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 502.976] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 508.030] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 513.032] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 516.262] CAN-CHG RLtyreTemperatureValue@1042 60 -> 61
+[ 518.035] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 523.108] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 528.111] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 533.113] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 538.174] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 539.789] CAN-CHG FLTyreTemperatureValue@1042 60 -> 61
+[ 543.177] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 548.181] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 553.234] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 558.236] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 563.238] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 565.154] CAN-CHG AmbientTemp@695 118 -> 120
+[ 568.283] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 568.567] CAN-CHG Screen_Heater_Relay__Status@963 0 -> 1
+[ 568.607] CAN-CHG Screen_Heater_Switch_Status@564 0 -> 1
+[ 568.723] CAN-CHG Screen_Heater_Switch_Status@564 1 -> 0
+[ 570.144] CAN-CHG AmbientTemp@695 120 -> 118
+[ 573.285] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 575.225] CAN-CHG Screen_Heater_Switch_Status@564 0 -> 1
+[ 575.279] CAN-CHG Screen_Heater_Relay__Status@963 1 -> 0
+[ 575.442] CAN-CHG Screen_Heater_Switch_Status@564 1 -> 0
+[ 578.287] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 578.737] CAN-CHG RLTyrePressureValue@1042 69 -> 71
+[ 580.152] CAN-CHG AmbientTemp@695 118 -> 120
+[ 583.351] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 585.141] CAN-CHG AmbientTemp@695 120 -> 118
+[ 588.353] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 590.138] CAN-CHG AmbientTemp@695 118 -> 120
+[ 593.355] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 595.150] CAN-CHG AmbientTemp@695 120 -> 118
+[ 598.409] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 603.411] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 608.413] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 608.895] CAN-CHG FRTyreTemperatureValue@1042 63 -> 64
+[ 613.462] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 615.156] CAN-CHG AmbientTemp@695 118 -> 120
+[ 618.466] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 620.161] CAN-CHG AmbientTemp@695 120 -> 118
+[ 623.468] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 628.543] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 633.545] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 638.547] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 643.598] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 648.600] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 653.602] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 656.940] EVENT state: volume = 13
+[ 657.098] EVENT state: volume = 12
+[ 657.432] EVENT state: volume = 11
+[ 658.228] EVENT state: volume = 10
+[ 658.669] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 663.672] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 668.675] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 670.811] CAN-CHG FRTyrePressureValue@1042 67 -> 68
+[ 673.759] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 678.761] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 683.764] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 688.817] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 693.820] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 698.822] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 703.309] CAN-CHG RLtyreTemperatureValue@1042 61 -> 62
+[ 703.894] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 708.896] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 713.898] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 718.982] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 723.985] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 728.987] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 734.092] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 739.095] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 744.096] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 749.173] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 754.175] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 759.177] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 764.274] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 769.276] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 774.278] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 779.358] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 784.361] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 784.906] CAN-CHG FLTyreTemperatureValue@1042 61 -> 62
+[ 787.738] CAN-CHG Isolator_Relay__Status@963 1 -> 0
+[ 787.738] CAN-CHG Child_Lock_LED_Indicator_Output_Status@963 0 -> 1
+[ 789.364] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 794.429] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 799.433] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 800.970] CAN-CHG Isolator_Relay__Status@963 0 -> 1
+[ 800.971] CAN-CHG Child_Lock_LED_Indicator_Output_Status@963 1 -> 0
+[ 804.436] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 809.493] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 814.496] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 819.498] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 824.555] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 825.191] CAN-CHG AmbientTemp@695 118 -> 120
+[ 829.557] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 830.194] CAN-CHG AmbientTemp@695 120 -> 118
+[ 834.559] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 839.610] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 844.612] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 846.205] CAN-CHG FLTyrePressureValue@1042 69 -> 71
+[ 849.615] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 854.661] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 859.663] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 864.665] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 869.729] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 874.731] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 879.733] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 884.786] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 889.788] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 890.105] CAN-CHG RLtyreTemperatureValue@1042 62 -> 63
+[ 892.157] CAN-CHG Position_Lamp_Status@963 0 -> 1
+[ 892.157] CAN-CHG Daylight_Status@963 1 -> 0
+[ 892.157] CAN-CHG Start_Stop_Green_LED_Output_Status@963 1 -> 0
+[ 892.185] CAN-CHG Position_Lamp_Switch_Status@564 0 -> 1
+[ 892.239] CAN-CHG Low_Beam_Status@963 0 -> 1
+[ 892.337] CAN-CHG Low_Beam_Switch_Status@564 0 -> 1
+[ 892.455] EVENT logic: onIllStateChanged | true | null
+[ 894.790] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 899.842] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 904.845] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 909.846] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 912.047] CAN-CHG Low_Beam_Status@963 1 -> 0
+[ 912.065] CAN-CHG Low_Beam_Switch_Status@564 1 -> 0
+[ 912.155] CAN-CHG Position_Lamp_Status@963 1 -> 0
+[ 912.203] CAN-CHG Position_Lamp_Switch_Status@564 1 -> 0
+[ 912.203] CAN-CHG Position_Lamp_Status@963 1 -> 0
+[ 912.203] CAN-CHG Daylight_Status@963 0 -> 1
+[ 912.203] CAN-CHG Start_Stop_Green_LED_Output_Status@963 0 -> 1
+[ 912.204] CAN-CHG Daylight_Status@963 0 -> 1
+[ 912.205] CAN-CHG Start_Stop_Green_LED_Output_Status@963 0 -> 1
+[ 912.331] CAN-CHG Position_Lamp_Switch_Status@564 1 -> 0
+[ 912.460] EVENT logic: onIllStateChanged | false | null
+[ 914.906] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 916.816] CAN-CHG High_Beam_Lamp_Switch_Status@564 0 -> 1
+[ 916.865] CAN-CHG High_Beam_Status@963 0 -> 1
+[ 916.866] CAN-CHG Daylight_Status@963 1 -> 0
+[ 916.866] CAN-CHG Start_Stop_Green_LED_Output_Status@963 1 -> 0
+[ 918.200] CAN-CHG FRTyrePressureValue@1042 68 -> 67
+[ 918.748] CAN-CHG High_Beam_Status@963 1 -> 0
+[ 918.749] CAN-CHG Daylight_Status@963 0 -> 1
+[ 918.749] CAN-CHG Start_Stop_Green_LED_Output_Status@963 0 -> 1
+[ 918.759] CAN-CHG High_Beam_Lamp_Switch_Status@564 1 -> 0
+[ 919.908] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 920.351] CAN-CHG High_Beam_Status@963 0 -> 1
+[ 920.351] CAN-CHG Daylight_Status@963 1 -> 0
+[ 920.352] CAN-CHG Start_Stop_Green_LED_Output_Status@963 1 -> 0
+[ 920.371] CAN-CHG High_Beam_Lamp_Switch_Status@564 0 -> 1
+[ 922.643] CAN-CHG High_Beam_Status@963 1 -> 0
+[ 922.643] CAN-CHG Daylight_Status@963 0 -> 1
+[ 922.643] CAN-CHG Start_Stop_Green_LED_Output_Status@963 0 -> 1
+[ 922.659] CAN-CHG High_Beam_Lamp_Switch_Status@564 1 -> 0
+[ 924.913] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 929.974] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 931.904] CAN-CHG FLTyrePressureValue@1042 71 -> 69
+[ 934.977] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 935.219] CAN-CHG AmbientTemp@695 118 -> 120
+[ 939.979] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 940.194] CAN-CHG AmbientTemp@695 120 -> 118
+[ 945.034] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 947.959] CAN-CHG Door_Lock_Output__Status@963 0 -> 2
+[ 948.032] CAN-CHG Master_Lock_Switch_Status@564 0 -> 1
+[ 948.148] CAN-CHG FLH_Actuator_Switch_Status@564 0 -> 1
+[ 948.198] CAN-CHG Door_Lock_Output__Status@963 2 -> 0
+[ 948.247] CAN-CHG Master_Lock_Switch_Status@564 1 -> 0
+[ 950.036] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 955.038] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 957.104] CAN-CHG Door_Lock_Output__Status@963 0 -> 1
+[ 957.150] CAN-CHG Master_Lock_Switch_Status@564 0 -> 1
+[ 957.250] CAN-CHG FLH_Actuator_Switch_Status@564 1 -> 0
+[ 957.250] CAN-CHG Master_Lock_Switch_Status@564 1 -> 0
+[ 957.296] CAN-CHG Door_Lock_Output__Status@963 1 -> 0
+[ 960.087] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 965.093] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 965.190] CAN-CHG AmbientTemp@695 118 -> 120
+[ 966.954] CAN-CHG Door_Lock_Output__Status@963 0 -> 2
+[ 967.033] CAN-CHG Master_Lock_Switch_Status@564 0 -> 1
+[ 967.164] CAN-CHG Door_Lock_Output__Status@963 2 -> 0
+[ 967.175] CAN-CHG FLH_Actuator_Switch_Status@564 0 -> 1
+[ 967.175] CAN-CHG Master_Lock_Switch_Status@564 1 -> 0
+[ 970.096] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 974.036] CAN-CHG Front_LH_Door_Switch_Status@564 1 -> 0
+[ 974.376] CAN-CHG Roof_Lamp_Status@963 0 -> 1
+[ 974.548] CAN-CHG Roof_Lamp_Status@963 1 -> 0
+[ 974.644] CAN-CHG Roof_Lamp_Status@963 0 -> 1
+[ 975.175] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 979.906] CAN-CHG FRTyrePressureValue@1042 67 -> 68
+[ 979.907] CAN-CHG FRTyreTemperatureValue@1042 64 -> 65
+[ 980.177] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 985.179] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 990.267] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 995.036] CAN-CHG Front_LH_Door_Switch_Status@564 0 -> 1
+[ 995.269] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[ 995.352] CAN-CHG KeyPositionStatus@577 0 -> 1
+[ 995.463] CAN-CHG Roof_Lamp_Status@963 1 -> 0
+[1000.271] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[1005.366] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[1009.737] CAN-CHG KeyPositionStatus@577 1 -> 0
+[1010.368] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[1015.370] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[1020.416] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[1025.418] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[1030.420] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[1035.515] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[1040.519] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[1041.991] CAN-CHG FRTyrePressureValue@1042 68 -> 67
+[1042.968] CAN-CHG Front_LH_Door_Switch_Status@564 1 -> 0
+[1043.279] CAN-CHG Roof_Lamp_Status@963 0 -> 1
+[1043.439] CAN-CHG Roof_Lamp_Status@963 1 -> 0
+[1043.554] CAN-CHG Roof_Lamp_Status@963 0 -> 1
+[1045.522] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[1045.642] CAN-CHG Front_LH_Door_Switch_Status@564 0 -> 1
+[1045.836] CAN-CHG KeyPositionStatus@577 0 -> 1
+[1046.065] CAN-CHG Roof_Lamp_Status@963 1 -> 0
+[1046.739] CAN-CHG Rear_LH_Door_Switch_Status@564 1 -> 0
+[1046.821] CAN-CHG KeyPositionStatus@577 1 -> 0
+[1046.995] CAN-CHG Roof_Lamp_Status@963 0 -> 1
+[1047.155] CAN-CHG Roof_Lamp_Status@963 1 -> 0
+[1047.287] CAN-CHG Roof_Lamp_Status@963 0 -> 1
+[1050.625] CAN-CHG KeyPositionStatus@577 0 -> 1
+[1050.808] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[1054.093] CAN-CHG FRTyrePressureValue@1042 67 -> 68
+[1055.154] CAN-CHG Rear_LH_Door_Switch_Status@564 0 -> 1
+[1055.656] CAN-CHG Roof_Lamp_Status@963 1 -> 0
+[1055.811] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[1056.025] CAN-CHG Roof_Lamp_Status@963 0 -> 1
+[1056.065] CAN-CHG Roof_Lamp_Status@963 1 -> 0
+[1056.066] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[1056.077] CAN-CHG KeyPositionStatus@577 1 -> 0
+[1056.199] CAN-CHG PEPS_ICMAlarm@577 0 -> 3
+[1059.078] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[1060.813] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[1061.686] CAN-CHG Horn_Relay__Status@963 0 -> 1
+[1061.746] CAN-CHG Horn_Relay__Status@963 1 -> 0
+[1061.816] CAN-CHG PKE_RKE_LockSignal@577 0 -> 1
+[1062.059] CAN-CHG PKE_RKE_LockSignal@577 1 -> 0
+[1062.248] CAN-CHG Horn_Relay__Status@963 0 -> 1
+[1062.301] CAN-CHG Horn_Relay__Status@963 1 -> 0
+[1065.868] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[1066.056] CAN-CHG PEPS_ICMAlarm@577 3 -> 0
+[1070.870] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[1074.967] CAN-CHG PKE_RKE_LuggageUnlockSignal@577 0 -> 1
+[1075.025] CAN-CHG Trunk_Output__Status@963 0 -> 1
+[1075.261] CAN-CHG PKE_RKE_LuggageUnlockSignal@577 1 -> 0
+[1075.345] CAN-CHG Trunk_Output__Status@963 1 -> 0
+[1075.388] CAN-CHG Trunk_Lid_Switch_Status@564 1 -> 0
+[1075.555] CAN-CHG Roof_Lamp_Status@963 0 -> 1
+[1075.779] CAN-CHG Roof_Lamp_Status@963 1 -> 0
+[1075.872] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[1075.886] CAN-CHG Roof_Lamp_Status@963 0 -> 1
+[1080.965] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[1085.967] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[1086.356] CAN-CHG PKE_RKE_LuggageUnlockSignal@577 0 -> 1
+[1086.445] CAN-CHG Trunk_Output__Status@963 0 -> 1
+[1086.537] CAN-CHG Trunk_Lid_Switch_Status@564 0 -> 1
+[1086.628] CAN-CHG PKE_RKE_LuggageUnlockSignal@577 1 -> 0
+[1086.681] CAN-CHG Trunk_Output__Status@963 1 -> 0
+[1086.751] CAN-CHG Roof_Lamp_Status@963 1 -> 0
+[1086.762] CAN-CHG Trunk_Lid_Switch_Status@564 1 -> 0
+[1086.995] CAN-CHG Roof_Lamp_Status@963 0 -> 1
+[1087.158] CAN-CHG Roof_Lamp_Status@963 1 -> 0
+[1087.310] CAN-CHG Roof_Lamp_Status@963 0 -> 1
+[1087.509] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[1087.544] CAN-CHG PEPS_ICMAlarm@577 0 -> 3
+[1090.498] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[1090.748] CAN-CHG PKE_RKE_LuggageUnlockSignal@577 0 -> 1
+[1090.837] CAN-CHG Trunk_Output__Status@963 0 -> 1
+[1090.971] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[1091.055] CAN-CHG Trunk_Lid_Switch_Status@564 0 -> 1
+[1091.141] CAN-CHG Trunk_Lid_Switch_Status@564 1 -> 0
+[1091.142] CAN-CHG PKE_RKE_LuggageUnlockSignal@577 1 -> 0
+[1091.220] CAN-CHG Roof_Lamp_Status@963 1 -> 0
+[1091.221] CAN-CHG Trunk_Output__Status@963 1 -> 0
+[1091.368] CAN-CHG Roof_Lamp_Status@963 0 -> 1
+[1091.588] CAN-CHG Roof_Lamp_Status@963 1 -> 0
+[1091.646] CAN-CHG Roof_Lamp_Status@963 0 -> 1
+[1096.562] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[1101.564] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[1101.829] CAN-CHG PEPS_ICMAlarm@577 3 -> 0
+[1106.566] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[1111.623] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[1115.432] CAN-CHG Front_LH_Door_Switch_Status@564 1 -> 0
+[1116.626] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[1119.556] CAN-CHG Front_LH_Door_Switch_Status@564 0 -> 1
+[1121.011] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[1121.059] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[1121.140] CAN-CHG BrakePedalStatus@577 0 -> 1
+[1121.630] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20523 odoICM=20523
+[1121.701] CAN-CHG Hand_Brake_Switch_Status@564 1 -> 0
+[1122.372] CAN-CHG Transmission_EOL_Status@1218 39 -> 43
+[1122.373] CAN-CHG Shifter_Lever_Signals@1218 9 -> 10
+[1122.486] CAN-CHG Transmission_EOL_Status@1218 43 -> 47
+[1122.487] CAN-CHG Shifter_Lever_Signals@1218 10 -> 11
+[1122.593] CAN-CHG Transmission_EOL_Status@1218 47 -> 51
+[1122.593] CAN-CHG Shifter_Lever_Signals@1218 11 -> 12
+[1124.027] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[1124.048] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[1124.049] CAN-CHG BrakePedalStatus@577 1 -> 0
+[1125.138] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[1125.163] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[1125.164] CAN-CHG BrakePedalStatus@577 0 -> 1
+[1126.644] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[1126.658] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[1126.659] CAN-CHG BrakePedalStatus@577 1 -> 0
+[1126.787] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=12 odoBCM=20525 odoICM=20525
+[1128.049] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[1128.083] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[1128.154] CAN-CHG BrakePedalStatus@577 0 -> 1
+[1129.981] CAN-CHG Transmission_EOL_Status@1218 51 -> 47
+[1129.981] CAN-CHG Shifter_Lever_Signals@1218 12 -> 11
+[1130.191] CAN-CHG Reversing_Lamp_Status@963 0 -> 1
+[1130.191] CAN-CHG Transmission_EOL_Status@1218 47 -> 43
+[1130.192] CAN-CHG Shifter_Lever_Signals@1218 11 -> 10
+[1130.534] EVENT logic: onBackStateChanged | true | null
+[1130.550] EVENT state: back = 1
+[1130.711] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[1130.736] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[1130.737] CAN-CHG BrakePedalStatus@577 1 -> 0
+[1131.790] SAMPLE back_state=true sys.btcall=<unset> speed@1218=0 lever@1218=10 odoBCM=20525 odoICM=20525
+[1132.185] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[1132.282] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[1132.287] CAN-CHG BrakePedalStatus@577 0 -> 1
+[1132.666] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[1132.760] CAN-CHG BrakePedalStatus@577 1 -> 0
+[1132.889] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[1134.453] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[1134.463] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[1134.579] CAN-CHG BrakePedalStatus@577 0 -> 1
+[1134.656] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[1134.665] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[1134.774] CAN-CHG BrakePedalStatus@577 1 -> 0
+[1135.216] CAN-CHG AmbientTemp@695 120 -> 122
+[1136.758] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[1136.758] CAN-CHG BrakePedalStatus@577 0 -> 1
+[1136.793] SAMPLE back_state=true sys.btcall=<unset> speed@1218=0 lever@1218=10 odoBCM=20525 odoICM=20525
+[1136.929] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[1138.150] CAN-CHG Reversing_Lamp_Status@963 1 -> 0
+[1138.195] CAN-CHG Transmission_EOL_Status@1218 43 -> 39
+[1138.195] CAN-CHG Shifter_Lever_Signals@1218 10 -> 9
+[1138.350] EVENT logic: onBackStateChanged | false | null
+[1138.379] EVENT state: back = 0
+[1140.203] CAN-CHG AmbientTemp@695 122 -> 120
+[1141.994] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20525 odoICM=20525
+[1142.446] CAN-CHG Hand_Brake_Switch_Status@564 0 -> 1
+[1143.239] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[1143.260] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[1143.261] CAN-CHG BrakePedalStatus@577 1 -> 0
+[1145.201] CAN-CHG AmbientTemp@695 120 -> 122
+[1146.996] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20525 odoICM=20525
+[1151.998] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20525 odoICM=20525
+[1154.837] CAN-CHG Front_LH_Door_Switch_Status@564 1 -> 0
+[1157.071] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20525 odoICM=20525
+[1160.344] CAN-CHG Front_LH_Door_Switch_Status@564 0 -> 1
+[1162.073] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20525 odoICM=20525
+[1167.076] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20525 odoICM=20525
+[1167.363] CAN-CHG Trunk_Lid_Switch_Status@564 0 -> 1
+[1167.765] CAN-CHG Roof_Lamp_Status@963 1 -> 0
+[1168.086] CAN-CHG Roof_Lamp_Status@963 0 -> 1
+[1168.176] CAN-CHG Roof_Lamp_Status@963 1 -> 0
+[1168.296] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[1168.354] CAN-CHG PEPS_ICMAlarm@577 0 -> 3
+[1171.278] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[1172.435] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20525 odoICM=20525
+[1175.144] CAN-CHG PKE_RKE_LuggageUnlockSignal@577 0 -> 1
+[1175.182] CAN-CHG Trunk_Output__Status@963 0 -> 1
+[1175.449] CAN-CHG PKE_RKE_LuggageUnlockSignal@577 1 -> 0
+[1175.500] CAN-CHG Trunk_Output__Status@963 1 -> 0
+[1175.582] CAN-CHG Trunk_Lid_Switch_Status@564 1 -> 0
+[1175.763] CAN-CHG Roof_Lamp_Status@963 0 -> 1
+[1175.944] CAN-CHG Roof_Lamp_Status@963 1 -> 0
+[1176.054] CAN-CHG Roof_Lamp_Status@963 0 -> 1
+[1177.438] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20525 odoICM=20525
+[1177.820] CAN-CHG Front_LH_Door_Switch_Status@564 1 -> 0
+[1178.252] CAN-CHG PEPS_ICMAlarm@577 3 -> 0
+[1181.739] CAN-CHG Front_LH_Door_Switch_Status@564 0 -> 1
+[1182.441] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20525 odoICM=20525
+[1187.630] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20525 odoICM=20525
+[1190.339] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[1190.441] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[1190.442] CAN-CHG BrakePedalStatus@577 0 -> 1
+[1190.923] CAN-CHG Hand_Brake_Switch_Status@564 1 -> 0
+[1192.632] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20525 odoICM=20525
+[1192.809] CAN-CHG Transmission_EOL_Status@1218 39 -> 43
+[1192.810] CAN-CHG Shifter_Lever_Signals@1218 9 -> 10
+[1192.828] CAN-CHG Reversing_Lamp_Status@963 0 -> 1
+[1192.898] CAN-CHG Transmission_EOL_Status@1218 43 -> 47
+[1192.900] CAN-CHG Shifter_Lever_Signals@1218 10 -> 11
+[1192.945] CAN-CHG Reversing_Lamp_Status@963 1 -> 0
+[1193.040] CAN-CHG Reversing_Lamp_Status@963 0 -> 1
+[1193.109] CAN-CHG Transmission_EOL_Status@1218 47 -> 43
+[1193.109] CAN-CHG Shifter_Lever_Signals@1218 11 -> 10
+[1193.439] EVENT logic: onBackStateChanged | true | null
+[1193.448] EVENT state: back = 1
+[1194.494] CAN-CHG Reversing_Lamp_Status@963 1 -> 0
+[1194.530] CAN-CHG Transmission_EOL_Status@1218 43 -> 47
+[1194.530] CAN-CHG Shifter_Lever_Signals@1218 10 -> 11
+[1194.584] EVENT logic: onBackStateChanged | false | null
+[1194.607] EVENT state: back = 0
+[1194.721] CAN-CHG Transmission_EOL_Status@1218 47 -> 51
+[1194.722] CAN-CHG Shifter_Lever_Signals@1218 11 -> 12
+[1195.216] CAN-CHG AmbientTemp@695 122 -> 120
+[1197.635] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=12 odoBCM=20525 odoICM=20525
+[1202.683] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=12 odoBCM=20525 odoICM=20525
+[1203.118] CAN-CHG Driver_seatbelt_lock_recognition@722 1 -> 0
+[1203.161] CAN-CHG Driver_Seat_Belt_Switch_Status@564 1 -> 0
+[1203.751] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[1203.870] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[1203.871] CAN-CHG BrakePedalStatus@577 1 -> 0
+[1205.233] CAN-CHG AmbientTemp@695 120 -> 122
+[1205.432] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[1205.443] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[1205.443] CAN-CHG BrakePedalStatus@577 0 -> 1
+[1206.151] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[1206.161] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[1206.230] CAN-CHG BrakePedalStatus@577 1 -> 0
+[1207.376] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[1207.380] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[1207.448] CAN-CHG BrakePedalStatus@577 0 -> 1
+[1207.685] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=12 odoBCM=20527 odoICM=20527
+[1210.234] CAN-CHG AmbientTemp@695 122 -> 120
+[1210.536] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[1210.593] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[1210.610] CAN-CHG BrakePedalStatus@577 1 -> 0
+[1212.687] SAMPLE back_state=false sys.btcall=<unset> speed@1218=5 lever@1218=12 odoBCM=20527 odoICM=20527
+[1213.190] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[1213.193] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[1213.193] CAN-CHG BrakePedalStatus@577 0 -> 1
+[1213.194] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[1214.708] CAN-CHG Transmission_EOL_Status@1218 51 -> 47
+[1214.708] CAN-CHG Shifter_Lever_Signals@1218 12 -> 11
+[1214.809] CAN-CHG FRTyreTemperatureValue@1042 65 -> 66
+[1214.961] CAN-CHG Reversing_Lamp_Status@963 0 -> 1
+[1215.023] CAN-CHG Transmission_EOL_Status@1218 47 -> 43
+[1215.024] CAN-CHG Shifter_Lever_Signals@1218 11 -> 10
+[1215.340] EVENT logic: onBackStateChanged | true | null
+[1215.372] CAN-CHG AmbientTemp@695 120 -> 122
+[1215.453] EVENT state: back = 1
+[1215.532] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[1215.632] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[1215.633] CAN-CHG BrakePedalStatus@577 1 -> 0
+[1217.770] SAMPLE back_state=true sys.btcall=<unset> speed@1218=2 lever@1218=10 odoBCM=20529 odoICM=20529
+[1217.839] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[1217.889] CAN-CHG BrakePedalStatus@577 0 -> 1
+[1217.951] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[1218.302] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[1218.385] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[1218.385] CAN-CHG BrakePedalStatus@577 1 -> 0
+[1219.060] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[1219.196] CAN-CHG BrakePedalStatus@577 0 -> 1
+[1219.407] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[1220.092] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[1220.186] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[1220.226] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[1220.227] CAN-CHG BrakePedalStatus@577 1 -> 0
+[1220.458] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[1220.563] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[1220.663] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[1220.663] CAN-CHG BrakePedalStatus@577 0 -> 1
+[1220.843] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[1220.844] CAN-CHG BrakePedalStatus@577 1 -> 0
+[1220.990] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[1222.289] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[1222.304] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[1222.304] CAN-CHG BrakePedalStatus@577 0 -> 1
+[1222.667] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[1222.680] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[1222.680] CAN-CHG BrakePedalStatus@577 1 -> 0
+[1222.778] SAMPLE back_state=true sys.btcall=<unset> speed@1218=0 lever@1218=10 odoBCM=20531 odoICM=20531
+[1223.731] CAN-CHG RRTyreTemperatureValue@1042 61 -> 62
+[1224.300] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[1224.300] CAN-CHG BrakePedalStatus@577 0 -> 1
+[1224.661] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[1224.662] CAN-CHG BrakePedalStatus@577 1 -> 0
+[1226.669] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[1226.683] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[1226.683] CAN-CHG BrakePedalStatus@577 0 -> 1
+[1227.107] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[1227.209] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[1227.209] CAN-CHG BrakePedalStatus@577 1 -> 0
+[1227.780] SAMPLE back_state=true sys.btcall=<unset> speed@1218=0 lever@1218=10 odoBCM=20533 odoICM=20533
+[1229.052] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[1229.061] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[1229.062] CAN-CHG BrakePedalStatus@577 0 -> 1
+[1231.468] CAN-CHG Reversing_Lamp_Status@963 1 -> 0
+[1231.514] CAN-CHG Transmission_EOL_Status@1218 43 -> 39
+[1231.515] CAN-CHG Shifter_Lever_Signals@1218 10 -> 9
+[1231.593] EVENT logic: onBackStateChanged | false | null
+[1231.627] EVENT state: back = 0
+[1232.893] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1237.895] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1239.716] CAN-CHG Transmission_EOL_Status@1218 39 -> 103
+[1239.717] CAN-CHG Winter_Mode_Status@1218 0 -> 1
+[1242.897] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1246.197] CAN-CHG Transmission_EOL_Status@1218 103 -> 39
+[1246.197] CAN-CHG Winter_Mode_Status@1218 1 -> 0
+[1248.131] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1253.133] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1255.593] CAN-CHG Transmission_EOL_Status@1218 39 -> 103
+[1255.594] CAN-CHG Winter_Mode_Status@1218 0 -> 1
+[1258.135] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1263.208] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1263.227] CAN-CHG Transmission_EOL_Status@1218 103 -> 39
+[1263.228] CAN-CHG Winter_Mode_Status@1218 1 -> 0
+[1263.721] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[1263.784] CAN-CHG BrakePedalStatus@577 1 -> 0
+[1263.907] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[1263.909] CAN-CHG BrakePedalStatus@577 0 -> 1
+[1264.380] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[1264.448] CAN-CHG BrakePedalStatus@577 1 -> 0
+[1264.537] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[1264.558] CAN-CHG BrakePedalStatus@577 0 -> 1
+[1266.823] CAN-CHG Hand_Brake_Switch_Status@564 0 -> 1
+[1267.259] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[1267.272] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[1267.385] CAN-CHG BrakePedalStatus@577 1 -> 0
+[1268.210] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1273.212] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1277.731] CAN-CHG Driver_seatbelt_lock_recognition@722 0 -> 1
+[1277.749] CAN-CHG Driver_Seat_Belt_Switch_Status@564 0 -> 1
+[1278.294] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1283.296] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1288.298] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1293.377] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1298.379] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1303.382] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1305.528] CAN-CHG Front_LH_Door_Switch_Status@564 1 -> 0
+[1308.435] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1312.146] CAN-CHG PKE_RKE_LuggageUnlockSignal@577 0 -> 1
+[1312.203] CAN-CHG Trunk_Output__Status@963 0 -> 1
+[1312.335] CAN-CHG Trunk_Lid_Switch_Status@564 0 -> 1
+[1312.441] CAN-CHG PKE_RKE_LuggageUnlockSignal@577 1 -> 0
+[1312.484] CAN-CHG Trunk_Output__Status@963 1 -> 0
+[1312.548] CAN-CHG Trunk_Lid_Switch_Status@564 1 -> 0
+[1313.438] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1315.160] CAN-CHG PKE_RKE_LuggageUnlockSignal@577 0 -> 1
+[1315.200] CAN-CHG Trunk_Output__Status@963 0 -> 1
+[1315.332] CAN-CHG Trunk_Lid_Switch_Status@564 0 -> 1
+[1315.441] CAN-CHG PKE_RKE_LuggageUnlockSignal@577 1 -> 0
+[1315.511] CAN-CHG Trunk_Output__Status@963 1 -> 0
+[1315.546] CAN-CHG Trunk_Lid_Switch_Status@564 1 -> 0
+[1317.236] CAN-CHG Trunk_Lid_Switch_Status@564 0 -> 1
+[1318.440] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1320.245] CAN-CHG Rear_RH_Door_Switch_Status@564 1 -> 0
+[1323.531] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1328.534] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1333.536] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1338.595] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1339.056] CAN-CHG Rear_RH_Door_Switch_Status@564 0 -> 1
+[1340.647] CAN-CHG Front_RH_Door_Switch_Status@564 1 -> 0
+[1343.597] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1348.598] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1353.657] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1358.660] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1363.662] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1368.832] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1373.835] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1378.224] CAN-CHG Front_RH_Door_Switch_Status@564 0 -> 1
+[1378.838] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1382.849] CAN-CHG Rear_LH_Door_Switch_Status@564 1 -> 0
+[1383.909] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1388.911] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1393.913] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1396.019] CAN-CHG Rear_LH_Door_Switch_Status@564 0 -> 1
+[1398.978] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1403.980] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1408.982] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1414.042] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1419.045] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1424.047] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1426.767] CAN-CHG Front_LH_Door_Switch_Status@564 0 -> 1
+[1426.965] CAN-CHG KeyPositionStatus@577 0 -> 1
+[1427.196] CAN-CHG Roof_Lamp_Status@963 1 -> 0
+[1429.095] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1434.097] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1439.100] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1441.569] CAN-CHG KeyPositionStatus@577 1 -> 0
+[1444.164] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1449.168] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1454.169] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1459.245] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1464.247] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1469.249] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1474.309] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1479.311] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1484.315] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1489.385] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1494.388] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1499.390] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1504.467] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1509.469] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1514.471] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1519.539] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1524.600] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1529.603] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1534.717] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1539.154] EVENT usbmusic playState=1
+[1539.719] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1544.722] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1546.507] EVENT usbmusic playState=0
+[1549.910] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1554.913] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1559.919] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1565.078] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1570.080] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1575.083] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1580.170] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1585.173] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1585.431] CAN-CHG FRTyreTemperatureValue@1042 66 -> 67
+[1590.174] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1595.242] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1599.273] EVENT usbmusic playState=1
+[1600.293] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1600.314] EVENT usbmusic playState=0
+[1605.316] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1610.396] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1615.408] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1620.410] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1626.007] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1631.010] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1636.014] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1641.082] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1646.084] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1651.086] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1656.175] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1661.181] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1666.186] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1671.395] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1676.398] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1681.400] SAMPLE back_state=false sys.btcall=<unset> speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1684.156] EVENT state: btPhoneState = 0
+[1684.203] EVENT state: btPhoneState = 2
+[1686.488] SAMPLE back_state=false sys.btcall=true speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1686.679] EVENT state: btPhoneState = 0
+[1686.702] EVENT state: btPhoneState = 2
+[1689.126] EVENT state: btPhoneState = 7
+[1689.147] EVENT state: btPhoneState = 3
+[1691.495] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1696.519] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1701.795] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1706.798] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1711.805] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1716.888] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1721.890] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1726.893] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1731.974] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1736.977] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1741.979] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1747.036] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1752.039] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1752.165] EVENT state: btPhoneState = 0
+[1752.195] EVENT state: btPhoneState = 2
+[1754.104] EVENT state: btPhoneState = 0
+[1754.129] EVENT state: btPhoneState = 2
+[1756.521] EVENT state: btPhoneState = 7
+[1756.544] EVENT state: btPhoneState = 3
+[1757.041] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1762.100] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1767.102] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1772.105] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1777.194] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1782.274] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1787.280] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1792.379] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1797.381] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1802.384] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1805.534] CAN-CHG RRTyrePressureValue@1042 78 -> 79
+[1806.621] EVENT state: btPhoneState = 0
+[1806.640] EVENT state: btPhoneState = 2
+[1807.442] SAMPLE back_state=false sys.btcall=true speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1808.511] EVENT state: btPhoneState = 0
+[1808.529] EVENT state: btPhoneState = 2
+[1812.018] EVENT state: btPhoneState = 7
+[1812.030] EVENT state: btPhoneState = 3
+[1812.347] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[1812.364] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[1812.417] CAN-CHG BrakePedalStatus@577 0 -> 1
+[1812.444] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1813.270] CAN-CHG Reversing_Lamp_Status@963 0 -> 1
+[1813.319] CAN-CHG Transmission_EOL_Status@1218 39 -> 43
+[1813.320] CAN-CHG Shifter_Lever_Signals@1218 9 -> 10
+[1813.569] EVENT logic: onBackStateChanged | true | null
+[1813.608] EVENT state: back = 1
+[1817.411] EVENT state: btPhoneState = 0
+[1817.441] EVENT state: btPhoneState = 2
+[1817.449] SAMPLE back_state=true sys.btcall=false speed@1218=0 lever@1218=10 odoBCM=20533 odoICM=20533
+[1819.450] EVENT state: btPhoneState = 0
+[1819.469] EVENT state: btPhoneState = 2
+[1822.684] SAMPLE back_state=true sys.btcall=true speed@1218=0 lever@1218=10 odoBCM=20533 odoICM=20533
+[1822.848] EVENT state: btPhoneState = 7
+[1822.860] EVENT state: btPhoneState = 3
+[1827.687] SAMPLE back_state=true sys.btcall=false speed@1218=0 lever@1218=10 odoBCM=20533 odoICM=20533
+[1829.034] EVENT state: btPhoneState = 0
+[1829.062] EVENT state: btPhoneState = 2
+[1830.282] CAN-CHG Reversing_Lamp_Status@963 1 -> 0
+[1830.321] CAN-CHG Transmission_EOL_Status@1218 43 -> 39
+[1830.321] CAN-CHG Shifter_Lever_Signals@1218 10 -> 9
+[1830.411] EVENT logic: onBackStateChanged | false | null
+[1830.424] EVENT state: back = 0
+[1830.950] EVENT state: btPhoneState = 0
+[1830.962] EVENT state: btPhoneState = 2
+[1832.691] SAMPLE back_state=false sys.btcall=true speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1833.827] EVENT state: btPhoneState = 7
+[1833.837] EVENT state: btPhoneState = 3
+[1834.720] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[1834.785] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[1834.793] CAN-CHG BrakePedalStatus@577 1 -> 0
+[1837.764] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1842.770] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1847.772] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1852.831] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1855.640] EVENT state: volume = 11
+[1855.949] EVENT state: volume = 12
+[1857.181] EVENT state: volume = 11
+[1857.834] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1862.835] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1867.444] CAN-CHG RRTyrePressureValue@1042 79 -> 78
+[1867.917] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1872.919] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1877.920] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1882.126] EVENT usbmusic playState=1
+[1883.003] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1886.047] EVENT usbmusic id3: title.len=62 artist.len=0 album.len=8
+[1886.100] EVENT usbmusic playState=0
+[1888.008] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1893.012] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1894.262] EVENT usbmusic id3: title.len=62 artist.len=0 album.len=8
+[1894.286] EVENT usbmusic playState=1
+[1897.483] EVENT usbmusic id3: title.len=62 artist.len=0 album.len=15
+[1897.498] EVENT usbmusic playState=0
+[1898.479] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1903.495] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1906.932] EVENT usbmusic id3: title.len=62 artist.len=0 album.len=8
+[1906.949] EVENT usbmusic playState=1
+[1908.449] EVENT usbmusic id3: title.len=52 artist.len=0 album.len=8
+[1908.497] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1909.919] EVENT usbmusic playState=0
+[1913.897] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1918.900] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1921.165] EVENT state: volume = 10
+[1923.903] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1927.782] EVENT usbmusic playState=1
+[1927.824] EVENT usbmusic playState=0
+[1927.903] EVENT usbmusic playState=1
+[1928.995] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1929.332] CAN-CHG RRTyrePressureValue@1042 78 -> 79
+[1934.001] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1936.156] EVENT usbmusic playState=0
+[1937.158] EVENT usbmusic playState=1
+[1939.005] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1942.619] EVENT usbmusic id3: title.len=62 artist.len=0 album.len=8
+[1944.167] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1945.035] EVENT usbmusic id3: title.len=48 artist.len=0 album.len=8
+[1946.775] EVENT usbmusic playState=0
+[1949.170] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1954.178] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1955.732] CAN-CHG FRTyrePressureValue@1042 68 -> 69
+[1959.253] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1964.255] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1968.043] CAN-CHG FRTyrePressureValue@1042 69 -> 68
+[1969.260] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1974.375] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1979.396] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1984.413] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1989.607] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1994.610] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[1999.656] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2004.831] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2009.832] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2014.834] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2019.906] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2024.908] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2029.910] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2035.003] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2040.005] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2045.007] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2045.362] CAN-CHG LH_Indicator_Switch_Status@564 0 -> 1
+[2045.362] CAN-CHG Indicator_Lamps_Command@564 0 -> 2
+[2045.412] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2045.413] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2045.456] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2045.773] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2045.773] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2045.833] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2046.101] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2046.101] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2046.187] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2046.477] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2046.477] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2046.543] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2046.836] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2046.836] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2046.903] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2047.191] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2047.192] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2047.256] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2047.552] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2047.552] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2047.616] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2047.884] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2047.884] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2047.987] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2048.302] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2048.303] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2048.353] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2048.640] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2048.640] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2048.702] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2048.999] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2048.999] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2049.043] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2049.335] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2049.335] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2049.446] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2049.691] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2049.692] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2049.778] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2050.100] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2050.100] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2050.102] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2050.142] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2050.241] CAN-CHG AmbientTemp@695 122 -> 124
+[2050.438] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2050.439] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2050.501] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2050.790] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2050.792] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2050.840] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2051.150] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2051.150] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2051.243] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2051.529] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2051.529] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2051.561] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2051.863] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2051.863] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2051.928] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2052.246] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2052.246] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2052.290] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2052.583] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2052.583] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2052.641] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2052.935] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2052.935] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2052.998] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2053.314] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2053.314] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2053.391] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2053.659] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2053.660] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2053.742] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2054.036] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2054.036] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2054.106] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2054.396] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2054.396] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2054.462] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2054.762] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2054.762] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2054.826] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2055.105] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2055.112] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2055.112] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2055.144] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2055.255] CAN-CHG AmbientTemp@695 124 -> 122
+[2055.471] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2055.472] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2055.538] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2055.863] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2055.864] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2055.894] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2056.218] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2056.219] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2056.286] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2056.536] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2056.537] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2056.620] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2056.916] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2056.916] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2056.944] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2057.265] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2057.265] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2057.346] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2057.647] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2057.647] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2057.700] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2057.983] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2057.984] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2058.046] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2058.362] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2058.362] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2058.407] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2058.719] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2058.719] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2058.786] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2059.075] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2059.075] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2059.138] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2059.462] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2059.463] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2059.508] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2059.816] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2059.817] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2059.856] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2060.109] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2060.137] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2060.138] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2060.196] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2060.288] CAN-CHG AmbientTemp@695 122 -> 124
+[2060.510] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2060.510] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2060.578] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2060.867] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2060.869] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2060.941] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2061.261] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2061.261] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2061.298] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2061.588] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2061.589] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2061.654] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2061.945] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2061.946] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2062.011] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2062.308] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2062.309] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2062.412] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2062.692] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2062.692] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2062.730] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2063.044] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2063.045] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2063.091] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2063.406] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2063.406] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2063.449] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2063.746] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2063.747] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2063.829] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2064.119] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2064.119] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2064.194] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2064.482] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2064.482] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2064.538] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2064.832] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2064.832] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2064.922] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2065.208] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2065.208] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2065.261] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2065.262] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2065.277] CAN-CHG AmbientTemp@695 124 -> 122
+[2065.548] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2065.548] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2065.630] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2065.903] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2065.903] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2065.990] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2066.287] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2066.288] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2066.331] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2066.647] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2066.647] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2066.707] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2066.997] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2066.997] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2067.052] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2067.358] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2067.359] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2067.424] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2067.704] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2067.704] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2067.784] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2068.055] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2068.055] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2068.148] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2068.442] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2068.442] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2068.497] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2068.797] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2068.798] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2068.838] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2069.150] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2069.150] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2069.210] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2069.508] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2069.509] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2069.576] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2069.869] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2069.869] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2069.954] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2070.249] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2070.249] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2070.266] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2070.312] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2070.604] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2070.604] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2070.648] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2070.948] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2070.948] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2071.030] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2071.315] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2071.315] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2071.391] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2071.659] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2071.659] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2071.737] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2072.037] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2072.038] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2072.094] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2072.398] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2072.398] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2072.450] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2072.743] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2072.743] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2072.830] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2073.104] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2073.104] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2073.205] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2073.455] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2073.455] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2073.542] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2073.836] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2073.837] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2073.889] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2074.199] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2074.199] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2074.261] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2074.558] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2074.558] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2074.619] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2074.908] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2074.909] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2075.004] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2075.238] CAN-CHG AmbientTemp@695 122 -> 124
+[2075.268] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2075.277] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2075.278] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2075.372] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2075.652] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2075.653] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2075.709] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2076.004] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2076.004] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2076.052] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2076.341] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2076.342] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2076.428] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2076.723] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2076.724] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2076.786] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2077.061] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2077.061] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2077.142] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2077.438] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2077.438] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2077.491] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2077.808] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2077.809] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2077.869] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2078.170] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2078.171] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2078.230] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2078.500] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2078.500] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2078.586] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2078.853] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2078.853] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2078.941] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2079.237] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2079.237] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2079.284] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2079.596] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2079.596] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2079.657] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2079.675] CAN-CHG LH_Indicator_Switch_Status@564 1 -> 0
+[2079.676] CAN-CHG Indicator_Lamps_Command@564 2 -> 0
+[2080.255] CAN-CHG AmbientTemp@695 124 -> 122
+[2080.439] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2080.532] CAN-CHG Right_Indicator_Lamp_Status@963 0 -> 1
+[2080.533] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2080.586] CAN-CHG RH_Indicator_Switch_Status@564 0 -> 1
+[2080.587] CAN-CHG Indicator_Lamps_Command@564 0 -> 1
+[2080.636] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2080.884] CAN-CHG Right_Indicator_Lamp_Status@963 1 -> 0
+[2080.884] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2080.943] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2081.242] CAN-CHG Right_Indicator_Lamp_Status@963 0 -> 1
+[2081.243] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2081.318] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2081.612] CAN-CHG Right_Indicator_Lamp_Status@963 1 -> 0
+[2081.612] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2081.684] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2081.974] CAN-CHG Right_Indicator_Lamp_Status@963 0 -> 1
+[2081.974] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2082.055] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2082.346] CAN-CHG Right_Indicator_Lamp_Status@963 1 -> 0
+[2082.346] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2082.414] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2082.705] CAN-CHG Right_Indicator_Lamp_Status@963 0 -> 1
+[2082.705] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2082.747] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2083.043] CAN-CHG Right_Indicator_Lamp_Status@963 1 -> 0
+[2083.043] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2083.122] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2083.415] CAN-CHG Right_Indicator_Lamp_Status@963 0 -> 1
+[2083.415] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2083.480] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2083.775] CAN-CHG Right_Indicator_Lamp_Status@963 1 -> 0
+[2083.775] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2083.838] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2083.856] CAN-CHG RH_Indicator_Switch_Status@564 1 -> 0
+[2083.857] CAN-CHG Indicator_Lamps_Command@564 1 -> 0
+[2084.441] CAN-CHG Position_Lamp_Switch_Status@564 0 -> 1
+[2084.509] CAN-CHG Position_Lamp_Status@963 0 -> 1
+[2084.509] CAN-CHG Daylight_Status@963 1 -> 0
+[2084.509] CAN-CHG Start_Stop_Green_LED_Output_Status@963 1 -> 0
+[2084.798] EVENT logic: onIllStateChanged | true | null
+[2084.994] CAN-CHG Low_Beam_Status@963 0 -> 1
+[2085.056] CAN-CHG Low_Beam_Switch_Status@564 0 -> 1
+[2085.240] CAN-CHG AmbientTemp@695 122 -> 124
+[2085.441] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2086.561] CAN-CHG Low_Beam_Switch_Status@564 1 -> 0
+[2086.607] CAN-CHG Low_Beam_Status@963 1 -> 0
+[2087.140] CAN-CHG Position_Lamp_Switch_Status@564 1 -> 0
+[2087.242] CAN-CHG Position_Lamp_Status@963 1 -> 0
+[2087.242] CAN-CHG Daylight_Status@963 0 -> 1
+[2087.243] CAN-CHG Start_Stop_Green_LED_Output_Status@963 0 -> 1
+[2087.500] EVENT logic: onIllStateChanged | false | null
+[2090.234] CAN-CHG AmbientTemp@695 124 -> 122
+[2090.443] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2091.266] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[2091.266] CAN-CHG BrakePedalStatus@577 0 -> 1
+[2091.346] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[2093.442] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[2093.465] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[2093.466] CAN-CHG BrakePedalStatus@577 1 -> 0
+[2095.254] CAN-CHG AmbientTemp@695 122 -> 124
+[2095.524] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2100.526] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2105.529] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2110.607] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2115.445] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[2115.519] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[2115.574] CAN-CHG BrakePedalStatus@577 0 -> 1
+[2115.613] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2120.615] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2123.525] CAN-CHG Position_Lamp_Switch_Status@564 0 -> 1
+[2123.622] CAN-CHG Position_Lamp_Status@963 0 -> 1
+[2123.622] CAN-CHG Daylight_Status@963 1 -> 0
+[2123.622] CAN-CHG Start_Stop_Green_LED_Output_Status@963 1 -> 0
+[2123.654] CAN-CHG Low_Beam_Switch_Status@564 0 -> 1
+[2123.718] CAN-CHG Low_Beam_Status@963 0 -> 1
+[2123.899] EVENT logic: onIllStateChanged | true | null
+[2125.680] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2125.839] CAN-CHG Low_Beam_Status@963 1 -> 0
+[2125.868] CAN-CHG Low_Beam_Switch_Status@564 1 -> 0
+[2125.935] CAN-CHG Position_Lamp_Switch_Status@564 1 -> 0
+[2126.010] CAN-CHG Position_Lamp_Status@963 1 -> 0
+[2126.010] CAN-CHG Daylight_Status@963 0 -> 1
+[2126.010] CAN-CHG Start_Stop_Green_LED_Output_Status@963 0 -> 1
+[2126.292] EVENT logic: onIllStateChanged | false | null
+[2129.373] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[2129.420] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[2129.483] CAN-CHG BrakePedalStatus@577 1 -> 0
+[2130.168] CAN-CHG Front_Fog_Lamp_Switch_Status@564 0 -> 1
+[2130.262] CAN-CHG Front_Fog_Lamp_Switch_Status@564 1 -> 0
+[2130.682] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2132.785] CAN-CHG LH_Indicator_Switch_Status@564 0 -> 1
+[2132.785] CAN-CHG Indicator_Lamps_Command@564 0 -> 2
+[2132.847] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2133.156] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2133.156] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2133.230] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2133.508] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2133.508] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2133.577] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2133.867] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2133.867] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2133.947] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2134.237] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2134.237] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2134.312] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2134.575] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2134.576] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2134.642] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2134.966] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2134.966] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2135.027] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2135.311] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2135.311] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2135.373] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2135.688] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2135.693] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2135.693] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2135.773] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2136.052] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2136.052] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2136.107] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2136.408] CAN-CHG Left_Indicator_Lamp_Status@963 0 -> 1
+[2136.408] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2136.450] CAN-CHG Left_Indicator_Lamp_Status@963 1 -> 0
+[2136.492] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2136.508] CAN-CHG LH_Indicator_Switch_Status@564 1 -> 0
+[2136.508] CAN-CHG Indicator_Lamps_Command@564 2 -> 0
+[2136.616] CAN-CHG Right_Indicator_Lamp_Status@963 0 -> 1
+[2136.616] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2136.668] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2136.685] CAN-CHG RH_Indicator_Switch_Status@564 0 -> 1
+[2136.685] CAN-CHG Indicator_Lamps_Command@564 0 -> 1
+[2136.843] CAN-CHG RH_Indicator_Switch_Status@564 1 -> 0
+[2136.843] CAN-CHG Indicator_Lamps_Command@564 1 -> 0
+[2136.977] CAN-CHG Right_Indicator_Lamp_Status@963 1 -> 0
+[2136.977] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2137.034] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2137.354] CAN-CHG Right_Indicator_Lamp_Status@963 0 -> 1
+[2137.354] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2137.409] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2137.455] CAN-CHG RH_Indicator_Switch_Status@564 0 -> 1
+[2137.455] CAN-CHG Indicator_Lamps_Command@564 0 -> 1
+[2137.668] CAN-CHG Right_Indicator_Lamp_Status@963 1 -> 0
+[2137.668] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2137.754] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2138.045] CAN-CHG Right_Indicator_Lamp_Status@963 0 -> 1
+[2138.045] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2138.089] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2138.407] CAN-CHG Right_Indicator_Lamp_Status@963 1 -> 0
+[2138.411] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2138.469] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2138.783] CAN-CHG Right_Indicator_Lamp_Status@963 0 -> 1
+[2138.783] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2138.822] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2139.145] CAN-CHG Right_Indicator_Lamp_Status@963 1 -> 0
+[2139.146] CAN-CHG Buzzer_Output__Status@963 0 -> 1
+[2139.171] CAN-CHG RH_Indicator_Switch_Status@564 1 -> 0
+[2139.171] CAN-CHG Indicator_Lamps_Command@564 1 -> 0
+[2139.222] CAN-CHG Buzzer_Output__Status@963 1 -> 0
+[2140.537] CAN-CHG High_Beam_Lamp_Switch_Status@564 0 -> 1
+[2140.616] CAN-CHG High_Beam_Status@963 0 -> 1
+[2140.616] CAN-CHG Daylight_Status@963 1 -> 0
+[2140.616] CAN-CHG Start_Stop_Green_LED_Output_Status@963 1 -> 0
+[2140.803] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2141.214] CAN-CHG High_Beam_Status@963 1 -> 0
+[2141.215] CAN-CHG Daylight_Status@963 0 -> 1
+[2141.215] CAN-CHG Start_Stop_Green_LED_Output_Status@963 0 -> 1
+[2141.270] CAN-CHG High_Beam_Lamp_Switch_Status@564 1 -> 0
+[2144.636] CAN-CHG Position_Lamp_Switch_Status@564 0 -> 1
+[2144.710] CAN-CHG Position_Lamp_Status@963 0 -> 1
+[2144.710] CAN-CHG Daylight_Status@963 1 -> 0
+[2144.710] CAN-CHG Start_Stop_Green_LED_Output_Status@963 1 -> 0
+[2144.990] EVENT logic: onIllStateChanged | true | null
+[2145.806] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2146.643] CAN-CHG Low_Beam_Switch_Status@564 0 -> 1
+[2146.692] CAN-CHG Low_Beam_Status@963 0 -> 1
+[2148.864] CAN-CHG High_Beam_Lamp_Switch_Status@564 0 -> 1
+[2148.930] CAN-CHG Low_Beam_Status@963 1 -> 0
+[2148.936] CAN-CHG High_Beam_Status@963 0 -> 1
+[2149.007] CAN-CHG Low_Beam_Switch_Status@564 1 -> 0
+[2150.807] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2151.114] CAN-CHG Low_Beam_Status@963 0 -> 1
+[2151.115] CAN-CHG High_Beam_Status@963 1 -> 0
+[2151.161] CAN-CHG Low_Beam_Switch_Status@564 0 -> 1
+[2151.161] CAN-CHG High_Beam_Lamp_Switch_Status@564 1 -> 0
+[2153.302] CAN-CHG Front_Fog_Lamp_Status@963 0 -> 1
+[2153.344] CAN-CHG Front_Fog_Lamp_Switch_Status@564 0 -> 1
+[2153.444] CAN-CHG Front_Fog_Lamp_Switch_Status@564 1 -> 0
+[2155.917] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2156.023] CAN-CHG Rear_Fog_Lamp_Status@963 0 -> 1
+[2156.023] CAN-CHG Anti_theft_Indicator_Output_Status@963 0 -> 1
+[2156.067] CAN-CHG Rear_Fog_Lamp_Switch_Status@564 0 -> 1
+[2156.138] CAN-CHG Rear_Fog_Lamp_Switch_Status@564 1 -> 0
+[2159.155] CAN-CHG Rear_Fog_Lamp_Switch_Status@564 0 -> 1
+[2159.228] CAN-CHG Rear_Fog_Lamp_Status@963 1 -> 0
+[2159.228] CAN-CHG Anti_theft_Indicator_Output_Status@963 1 -> 0
+[2159.366] CAN-CHG Rear_Fog_Lamp_Switch_Status@564 1 -> 0
+[2160.369] CAN-CHG Front_Fog_Lamp_Switch_Status@564 0 -> 1
+[2160.419] CAN-CHG Front_Fog_Lamp_Status@963 1 -> 0
+[2160.472] CAN-CHG Front_Fog_Lamp_Switch_Status@564 1 -> 0
+[2160.921] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2162.359] CAN-CHG Low_Beam_Switch_Status@564 1 -> 0
+[2162.412] CAN-CHG Low_Beam_Status@963 1 -> 0
+[2162.464] CAN-CHG Position_Lamp_Switch_Status@564 1 -> 0
+[2162.520] CAN-CHG Position_Lamp_Status@963 1 -> 0
+[2162.521] CAN-CHG Daylight_Status@963 0 -> 1
+[2162.521] CAN-CHG Start_Stop_Green_LED_Output_Status@963 0 -> 1
+[2162.794] EVENT logic: onIllStateChanged | false | null
+[2165.925] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2171.033] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2176.034] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2181.036] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2186.142] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2191.148] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2196.150] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2201.253] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2206.254] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2211.256] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2216.606] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2220.229] CAN-CHG AmbientTemp@695 124 -> 126
+[2221.609] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2225.229] CAN-CHG AmbientTemp@695 126 -> 124
+[2226.611] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2231.685] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2236.687] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2241.689] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2246.777] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2250.264] CAN-CHG AmbientTemp@695 124 -> 126
+[2251.778] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2256.780] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2261.860] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2266.862] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2271.864] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2276.934] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2281.936] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2286.939] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2292.008] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2297.010] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2302.012] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2307.081] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2312.084] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2313.082] CAN-CHG Rear_Wiper_Output_Status@963 0 -> 2
+[2313.097] CAN-CHG PowerDistributionStatus@577 2 -> 1
+[2313.097] CAN-CHG Anti_theft_status_indication@577 0 -> 1
+[2313.097] CAN-CHG IG1RelaySt@577 1 -> 0
+[2313.097] CAN-CHG IG2RelaySt@577 1 -> 0
+[2313.169] EVENT state: acc = 0
+[2313.189] EVENT logic: onAccStateChanged | false | null
+[2313.262] CAN-CHG Daylight_Status@963 1 -> 0
+[2313.262] CAN-CHG Isolator_Relay__Status@963 1 -> 0
+[2313.262] CAN-CHG Start_Stop_Green_LED_Output_Status@963 1 -> 0
+[2313.318] CAN-CHG FLTyrePressureValue@1042 69 -> 94
+[2313.319] CAN-CHG FRTyrePressureValue@1042 68 -> 94
+[2313.319] CAN-CHG RLTyrePressureValue@1042 71 -> 94
+[2313.319] CAN-CHG RRTyrePressureValue@1042 79 -> 94
+[2313.320] CAN-CHG FLTyreTemperatureValue@1042 62 -> 65
+[2313.321] CAN-CHG FRTyreTemperatureValue@1042 67 -> 65
+[2313.321] CAN-CHG RLtyreTemperatureValue@1042 63 -> 65
+[2313.322] CAN-CHG RRTyreTemperatureValue@1042 62 -> 65
+[2313.322] CAN-CHG FLtyrePressureStatus@1043 2 -> 0
+[2313.322] CAN-CHG FRTyrePressureStatus@1043 2 -> 0
+[2313.489] CAN-CHG Roof_Lamp_Status@963 0 -> 1
+[2313.508] CAN-CHG Start_Switch_Status@564 2 -> 0
+[2313.509] CAN-CHG PowerDistributionStatus@577 1 -> 0
+[2313.509] CAN-CHG KeyPositionStatus@577 0 -> 1
+[2313.510] CAN-CHG Anti_theft_status_indication@577 1 -> 0
+[2313.510] CAN-CHG ACCRelaySt@577 1 -> 0
+[2313.680] CAN-CHG Roof_Lamp_Status@963 1 -> 0
+[2313.748] CAN-CHG Roof_Lamp_Status@963 0 -> 1
+[2314.410] CAN-CHG IGSwitchSteerlockStatus@577 1 -> 3
+[2314.410] CAN-CHG PEPS_ICMInd@577 0 -> 4
+[2314.528] EVENT logic: onAccStateChanged | true | null
+[2314.545] EVENT state: acc = 1
+[2314.613] CAN-CHG Start_Switch_Status@564 0 -> 1
+[2314.616] CAN-CHG PowerDistributionStatus@577 0 -> 1
+[2314.616] CAN-CHG Anti_theft_status_indication@577 0 -> 1
+[2314.619] CAN-CHG IGSwitchSteerlockStatus@577 3 -> 1
+[2314.619] CAN-CHG ACCRelaySt@577 0 -> 1
+[2317.085] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2318.679] CAN-CHG KeyPositionStatus@577 1 -> 0
+[2322.163] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2322.390] CAN-CHG PEPS_ICMInd@577 4 -> 0
+[2327.166] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2327.195] CAN-CHG KeyPositionStatus@577 0 -> 1
+[2327.196] CAN-CHG IGSwitchSteerlockStatus@577 1 -> 3
+[2327.196] CAN-CHG PEPS_ICMInd@577 0 -> 4
+[2327.280] CAN-CHG PowerDistributionStatus@577 1 -> 2
+[2327.280] CAN-CHG IGSwitchSteerlockStatus@577 3 -> 1
+[2327.280] CAN-CHG IG2RelaySt@577 0 -> 1
+[2327.326] CAN-CHG Rear_Wiper_Output_Status@963 2 -> 0
+[2327.354] CAN-CHG Isolator_Relay__Status@963 0 -> 1
+[2327.372] CAN-CHG Start_Switch_Status@564 1 -> 2
+[2327.372] CAN-CHG IG1RelaySt@577 0 -> 1
+[2327.462] CAN-CHG Error_flag_of_the_airbag_ECU@722 0 -> 1
+[2327.462] CAN-CHG Passenger_airbag_cut_off_status@722 0 -> 1
+[2327.462] CAN-CHG Transmission_Warning_Lamp@1218 0 -> 1
+[2327.826] CAN-CHG Roof_Lamp_Status@963 1 -> 0
+[2329.449] CAN-CHG Transmission_Warning_Lamp@1218 1 -> 0
+[2332.168] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2332.575] CAN-CHG KeyPositionStatus@577 1 -> 0
+[2333.019] CAN-CHG Error_flag_of_the_airbag_ECU@722 1 -> 0
+[2333.021] CAN-CHG Passenger_airbag_cut_off_status@722 1 -> 0
+[2335.158] CAN-CHG PEPS_ICMInd@577 4 -> 0
+[2335.266] CAN-CHG AmbientTemp@695 126 -> 124
+[2337.272] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2339.601] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[2339.658] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[2339.695] CAN-CHG BrakePedalStatus@577 0 -> 1
+[2339.750] CAN-CHG KeyPositionStatus@577 0 -> 1
+[2339.750] CAN-CHG Anti_theft_status_indication@577 1 -> 2
+[2342.274] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2345.267] CAN-CHG AmbientTemp@695 124 -> 126
+[2345.287] CAN-CHG BrakePedalStatus@577 1 -> 0
+[2345.287] CAN-CHG Anti_theft_status_indication@577 2 -> 1
+[2345.373] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[2345.399] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[2347.276] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2350.253] CAN-CHG AmbientTemp@695 126 -> 124
+[2352.362] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2354.287] CAN-CHG KeyPositionStatus@577 1 -> 0
+[2355.292] CAN-CHG AmbientTemp@695 124 -> 126
+[2355.359] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[2355.360] CAN-CHG BrakePedalStatus@577 0 -> 1
+[2355.420] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[2355.499] CAN-CHG KeyPositionStatus@577 0 -> 1
+[2355.499] CAN-CHG Anti_theft_status_indication@577 1 -> 2
+[2355.971] EVENT logic: onAccStateChanged | false | null
+[2355.972] EVENT state: acc = 0
+[2356.091] CAN-CHG PowerDistributionStatus@577 2 -> 3
+[2356.091] CAN-CHG ACCRelaySt@577 1 -> 0
+[2356.091] CAN-CHG StartRelaySt@577 0 -> 1
+[2356.166] CAN-CHG Start_Switch_Status@564 2 -> 3
+[2356.275] CAN-CHG Daylight_Status@963 0 -> 1
+[2356.275] CAN-CHG Start_Stop_Green_LED_Output_Status@963 0 -> 1
+[2356.895] EVENT logic: onAccStateChanged | true | null
+[2356.901] EVENT state: acc = 1
+[2356.954] CAN-CHG PowerDistributionStatus@577 3 -> 2
+[2356.955] CAN-CHG Anti_theft_status_indication@577 2 -> 0
+[2356.956] CAN-CHG ACCRelaySt@577 0 -> 1
+[2356.956] CAN-CHG StartRelaySt@577 1 -> 0
+[2357.121] CAN-CHG Start_Switch_Status@564 3 -> 2
+[2357.365] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2357.466] CAN-CHG IGSwitchSteerlockStatus@577 1 -> 3
+[2357.893] CAN-CHG IGSwitchSteerlockStatus@577 3 -> 1
+[2358.321] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[2358.357] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[2358.417] CAN-CHG BrakePedalStatus@577 1 -> 0
+[2362.367] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2367.458] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2370.069] CAN-CHG KeyPositionStatus@577 1 -> 0
+[2370.262] CAN-CHG AmbientTemp@695 126 -> 124
+[2372.460] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2374.408] CAN-CHG Rear_Wiper_Output_Status@963 0 -> 2
+[2374.468] CAN-CHG PowerDistributionStatus@577 2 -> 1
+[2374.468] CAN-CHG Anti_theft_status_indication@577 0 -> 1
+[2374.469] CAN-CHG IG1RelaySt@577 1 -> 0
+[2374.469] CAN-CHG IG2RelaySt@577 1 -> 0
+[2374.481] EVENT logic: onAccStateChanged | false | null
+[2374.486] EVENT state: acc = 0
+[2374.544] CAN-CHG Daylight_Status@963 1 -> 0
+[2374.545] CAN-CHG Isolator_Relay__Status@963 1 -> 0
+[2374.545] CAN-CHG Start_Stop_Green_LED_Output_Status@963 1 -> 0
+[2374.571] CAN-CHG Start_Switch_Status@564 2 -> 1
+[2374.571] CAN-CHG PowerDistributionStatus@577 1 -> 0
+[2374.572] CAN-CHG KeyPositionStatus@577 0 -> 1
+[2374.572] CAN-CHG Anti_theft_status_indication@577 1 -> 0
+[2374.572] CAN-CHG ACCRelaySt@577 1 -> 0
+[2374.673] CAN-CHG Start_Switch_Status@564 1 -> 0
+[2374.767] CAN-CHG Roof_Lamp_Status@963 0 -> 1
+[2374.931] CAN-CHG Roof_Lamp_Status@963 1 -> 0
+[2375.033] CAN-CHG Roof_Lamp_Status@963 0 -> 1
+[2375.252] CAN-CHG AmbientTemp@695 124 -> 126
+[2377.462] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2379.481] CAN-CHG IGSwitchSteerlockStatus@577 1 -> 3
+[2379.481] CAN-CHG PEPS_ICMInd@577 0 -> 4
+[2379.591] CAN-CHG IGSwitchSteerlockStatus@577 3 -> 1
+[2379.609] EVENT logic: onAccStateChanged | true | null
+[2379.619] EVENT state: acc = 1
+[2379.698] CAN-CHG PowerDistributionStatus@577 0 -> 1
+[2379.699] CAN-CHG Anti_theft_status_indication@577 0 -> 1
+[2379.699] CAN-CHG ACCRelaySt@577 0 -> 1
+[2379.785] CAN-CHG Start_Switch_Status@564 0 -> 1
+[2379.894] CAN-CHG KeyPositionStatus@577 1 -> 0
+[2382.961] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2387.476] CAN-CHG PEPS_ICMInd@577 4 -> 0
+[2387.963] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2390.841] CAN-CHG Roof_Lamp_Status@963 1 -> 0
+[2391.205] CAN-CHG Roof_Lamp_Status@963 0 -> 1
+[2391.282] CAN-CHG Roof_Lamp_Status@963 1 -> 0
+[2391.829] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[2391.880] CAN-CHG BrakePedalStatus@577 0 -> 1
+[2391.987] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[2391.987] CAN-CHG KeyPositionStatus@577 0 -> 1
+[2391.987] CAN-CHG Anti_theft_status_indication@577 1 -> 2
+[2392.965] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2394.788] CAN-CHG BrakePedalStatus@577 1 -> 0
+[2394.836] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[2394.879] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[2394.917] CAN-CHG Anti_theft_status_indication@577 2 -> 1
+[2398.356] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2403.358] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2404.211] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[2404.255] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[2404.306] CAN-CHG BrakePedalStatus@577 0 -> 1
+[2404.306] CAN-CHG Anti_theft_status_indication@577 1 -> 2
+[2404.693] CAN-CHG IGSwitchSteerlockStatus@577 1 -> 3
+[2404.792] CAN-CHG IGSwitchSteerlockStatus@577 3 -> 1
+[2404.844] CAN-CHG Rear_Wiper_Output_Status@963 2 -> 0
+[2404.845] CAN-CHG Isolator_Relay__Status@963 0 -> 1
+[2404.899] CAN-CHG PowerDistributionStatus@577 1 -> 2
+[2404.900] CAN-CHG IG1RelaySt@577 0 -> 1
+[2404.900] CAN-CHG IG2RelaySt@577 0 -> 1
+[2404.943] CAN-CHG Start_Switch_Status@564 1 -> 2
+[2405.011] CAN-CHG Transmission_Warning_Lamp@1218 0 -> 1
+[2405.144] CAN-CHG Error_flag_of_the_airbag_ECU@722 0 -> 1
+[2405.144] CAN-CHG Passenger_airbag_cut_off_status@722 0 -> 1
+[2405.789] EVENT logic: onAccStateChanged | false | null
+[2405.797] EVENT state: acc = 0
+[2405.886] CAN-CHG PowerDistributionStatus@577 2 -> 3
+[2405.888] CAN-CHG ACCRelaySt@577 1 -> 0
+[2405.892] CAN-CHG StartRelaySt@577 0 -> 1
+[2405.998] CAN-CHG Start_Switch_Status@564 2 -> 3
+[2406.043] CAN-CHG Daylight_Status@963 0 -> 1
+[2406.043] CAN-CHG Start_Stop_Green_LED_Output_Status@963 0 -> 1
+[2406.499] EVENT logic: onAccStateChanged | true | null
+[2406.506] EVENT state: acc = 1
+[2406.580] CAN-CHG PowerDistributionStatus@577 3 -> 2
+[2406.581] CAN-CHG Anti_theft_status_indication@577 2 -> 0
+[2406.581] CAN-CHG ACCRelaySt@577 0 -> 1
+[2406.581] CAN-CHG StartRelaySt@577 1 -> 0
+[2406.718] CAN-CHG Start_Switch_Status@564 3 -> 2
+[2407.028] CAN-CHG Transmission_Warning_Lamp@1218 1 -> 0
+[2407.060] CAN-CHG IGSwitchSteerlockStatus@577 1 -> 3
+[2407.256] CAN-CHG IGSwitchSteerlockStatus@577 3 -> 1
+[2408.364] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2410.501] CAN-CHG Transmission_EOL_Status@1218 39 -> 43
+[2410.502] CAN-CHG Shifter_Lever_Signals@1218 9 -> 10
+[2410.525] CAN-CHG Error_flag_of_the_airbag_ECU@722 1 -> 0
+[2410.525] CAN-CHG Passenger_airbag_cut_off_status@722 1 -> 0
+[2410.632] CAN-CHG Transmission_EOL_Status@1218 43 -> 47
+[2410.632] CAN-CHG Shifter_Lever_Signals@1218 10 -> 11
+[2413.527] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=11 odoBCM=20533 odoICM=20533
+[2416.550] CAN-CHG BrakePedalStatus@577 1 -> 0
+[2416.610] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[2416.648] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[2418.266] CAN-CHG Rear_Wiper_Output_Status@963 0 -> 2
+[2418.336] CAN-CHG PowerDistributionStatus@577 2 -> 1
+[2418.337] CAN-CHG Anti_theft_status_indication@577 0 -> 1
+[2418.337] CAN-CHG PEPS_ICMInd@577 0 -> 5
+[2418.338] CAN-CHG IG1RelaySt@577 1 -> 0
+[2418.338] CAN-CHG IG2RelaySt@577 1 -> 0
+[2418.389] CAN-CHG Daylight_Status@963 1 -> 0
+[2418.389] CAN-CHG Isolator_Relay__Status@963 1 -> 0
+[2418.389] CAN-CHG Start_Stop_Green_LED_Output_Status@963 1 -> 0
+[2418.453] CAN-CHG Start_Switch_Status@564 2 -> 1
+[2418.536] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=11 odoBCM=20533 odoICM=20533
+[2418.600] CAN-CHG Roof_Lamp_Status@963 0 -> 1
+[2418.721] CAN-CHG Roof_Lamp_Status@963 1 -> 0
+[2418.855] CAN-CHG Roof_Lamp_Status@963 0 -> 1
+[2422.272] CAN-CHG BrakePedalStatus@577 0 -> 1
+[2422.324] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[2422.359] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[2423.538] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=11 odoBCM=20533 odoICM=20533
+[2426.877] CAN-CHG BrakePedalStatus@577 1 -> 0
+[2426.918] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[2426.988] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[2427.979] CAN-CHG BrakePedalStatus@577 0 -> 1
+[2428.022] CAN-CHG Brake_Lamp_Status@963 0 -> 1
+[2428.063] CAN-CHG Brake_Pedal_Switch_Status@564 0 -> 1
+[2428.276] CAN-CHG PEPS_ICMInd@577 5 -> 0
+[2428.616] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=11 odoBCM=20533 odoICM=20533
+[2428.983] CAN-CHG PowerDistributionStatus@577 1 -> 2
+[2428.983] CAN-CHG Anti_theft_status_indication@577 1 -> 2
+[2428.984] CAN-CHG IG2RelaySt@577 0 -> 1
+[2429.031] CAN-CHG Rear_Wiper_Output_Status@963 2 -> 0
+[2429.032] CAN-CHG Isolator_Relay__Status@963 0 -> 1
+[2429.052] CAN-CHG Start_Switch_Status@564 1 -> 2
+[2429.129] CAN-CHG IG1RelaySt@577 0 -> 1
+[2429.188] CAN-CHG Error_flag_of_the_airbag_ECU@722 0 -> 1
+[2429.189] CAN-CHG Passenger_airbag_cut_off_status@722 0 -> 1
+[2429.242] CAN-CHG Transmission_Warning_Lamp@1218 0 -> 1
+[2429.507] CAN-CHG Roof_Lamp_Status@963 1 -> 0
+[2429.916] CAN-CHG Roof_Lamp_Status@963 0 -> 1
+[2429.958] CAN-CHG Roof_Lamp_Status@963 1 -> 0
+[2429.976] EVENT logic: onAccStateChanged | false | null
+[2429.979] EVENT state: acc = 0
+[2430.084] CAN-CHG PowerDistributionStatus@577 2 -> 3
+[2430.085] CAN-CHG ACCRelaySt@577 1 -> 0
+[2430.085] CAN-CHG StartRelaySt@577 0 -> 1
+[2430.151] CAN-CHG Start_Switch_Status@564 2 -> 3
+[2430.259] CAN-CHG Daylight_Status@963 0 -> 1
+[2430.267] CAN-CHG Start_Stop_Green_LED_Output_Status@963 0 -> 1
+[2430.769] EVENT logic: onAccStateChanged | true | null
+[2430.787] EVENT state: acc = 1
+[2430.876] CAN-CHG PowerDistributionStatus@577 3 -> 2
+[2430.877] CAN-CHG Anti_theft_status_indication@577 2 -> 0
+[2430.878] CAN-CHG ACCRelaySt@577 0 -> 1
+[2430.878] CAN-CHG StartRelaySt@577 1 -> 0
+[2431.006] CAN-CHG Start_Switch_Status@564 3 -> 2
+[2431.259] CAN-CHG Transmission_Warning_Lamp@1218 1 -> 0
+[2431.397] CAN-CHG IGSwitchSteerlockStatus@577 1 -> 3
+[2431.779] CAN-CHG IGSwitchSteerlockStatus@577 3 -> 1
+[2432.223] CAN-CHG Transmission_EOL_Status@1218 47 -> 43
+[2432.224] CAN-CHG Shifter_Lever_Signals@1218 11 -> 10
+[2432.277] CAN-CHG Reversing_Lamp_Status@963 0 -> 1
+[2432.529] EVENT logic: onBackStateChanged | true | null
+[2432.553] EVENT state: back = 1
+[2433.622] SAMPLE back_state=true sys.btcall=false speed@1218=0 lever@1218=10 odoBCM=20533 odoICM=20533
+[2434.759] CAN-CHG Error_flag_of_the_airbag_ECU@722 1 -> 0
+[2434.759] CAN-CHG Passenger_airbag_cut_off_status@722 1 -> 0
+[2435.029] CAN-CHG Reversing_Lamp_Status@963 1 -> 0
+[2435.029] CAN-CHG Transmission_EOL_Status@1218 43 -> 39
+[2435.032] CAN-CHG Shifter_Lever_Signals@1218 10 -> 9
+[2435.107] EVENT logic: onBackStateChanged | false | null
+[2435.144] EVENT state: back = 0
+[2437.208] CAN-CHG Brake_Lamp_Status@963 1 -> 0
+[2437.270] CAN-CHG Brake_Pedal_Switch_Status@564 1 -> 0
+[2437.372] CAN-CHG BrakePedalStatus@577 1 -> 0
+[2438.626] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2442.562] CAN-CHG KeyPositionStatus@577 1 -> 0
+[2443.721] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2448.723] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2453.725] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2458.811] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2463.813] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2468.815] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2474.188] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2479.217] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2484.219] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2487.080] CAN-CHG Rear_Wiper_Output_Status@963 0 -> 2
+[2487.097] CAN-CHG PowerDistributionStatus@577 2 -> 1
+[2487.098] CAN-CHG Anti_theft_status_indication@577 0 -> 1
+[2487.098] CAN-CHG IG1RelaySt@577 1 -> 0
+[2487.098] CAN-CHG IG2RelaySt@577 1 -> 0
+[2487.163] EVENT logic: onAccStateChanged | false | null
+[2487.168] EVENT state: acc = 0
+[2487.184] CAN-CHG Daylight_Status@963 1 -> 0
+[2487.184] CAN-CHG Isolator_Relay__Status@963 1 -> 0
+[2487.184] CAN-CHG Start_Stop_Green_LED_Output_Status@963 1 -> 0
+[2487.302] CAN-CHG Start_Switch_Status@564 2 -> 1
+[2487.307] CAN-CHG PowerDistributionStatus@577 1 -> 0
+[2487.307] CAN-CHG KeyPositionStatus@577 0 -> 1
+[2487.310] CAN-CHG Anti_theft_status_indication@577 1 -> 0
+[2487.311] CAN-CHG ACCRelaySt@577 1 -> 0
+[2487.388] CAN-CHG Start_Switch_Status@564 1 -> 0
+[2487.455] CAN-CHG Roof_Lamp_Status@963 0 -> 1
+[2487.579] CAN-CHG Roof_Lamp_Status@963 1 -> 0
+[2487.643] CAN-CHG Roof_Lamp_Status@963 0 -> 1
+[2489.306] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2491.070] CAN-CHG IGSwitchSteerlockStatus@577 1 -> 3
+[2491.071] CAN-CHG PEPS_ICMInd@577 0 -> 4
+[2491.174] CAN-CHG IGSwitchSteerlockStatus@577 3 -> 1
+[2491.198] EVENT logic: onAccStateChanged | true | null
+[2491.204] EVENT state: acc = 1
+[2491.309] CAN-CHG PowerDistributionStatus@577 0 -> 1
+[2491.309] CAN-CHG Anti_theft_status_indication@577 0 -> 1
+[2491.310] CAN-CHG ACCRelaySt@577 0 -> 1
+[2491.448] CAN-CHG Start_Switch_Status@564 0 -> 1
+[2492.580] CAN-CHG KeyPositionStatus@577 1 -> 0
+[2494.308] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2499.091] CAN-CHG PEPS_ICMInd@577 4 -> 0
+[2499.310] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2503.413] CAN-CHG Roof_Lamp_Status@963 1 -> 0
+[2503.809] CAN-CHG Roof_Lamp_Status@963 0 -> 1
+[2503.834] CAN-CHG Roof_Lamp_Status@963 1 -> 0
+[2504.403] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2509.405] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2514.407] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2519.508] SAMPLE back_state=false sys.btcall=false speed@1218=0 lever@1218=9 odoBCM=20533 odoICM=20533
+[2519.520]   Start_Switch_Status@564 2->1  Driver_Seat_Belt_Switch_Status@564 0->1  FLH_Actuator_Switch_Status@564 0->1  PowerDistributionStatus@577 2->1  
+[2519.521]   Anti_theft_status_indication@577 0->1  IG1RelaySt@577 1->0  IG2RelaySt@577 1->0  Daylight_Status@963 1->0  Rear_Wiper_Output_Status@963 0->2  
+[2519.521]   Isolator_Relay__Status@963 1->0  Start_Stop_Green_LED_Output_Status@963 1->0  ODO_calculated_By_BCM@800 19520->20533  Checksum_of_message_Airbag_1@722 204->173  
+[2519.521]   Driver_seatbelt_lock_recognition@722 0->1  Airbag_counter_for_live_check@722 12->10  ODO_calculated_By_ICM@1219 19520->20533  Overal_Ratio@1218 15700->16066  
+[2519.521]   FLTyrePressureValue@1042 68->94  FRTyrePressureValue@1042 66->94  RLTyrePressureValue@1042 68->94  RRTyrePressureValue@1042 77->94  
+[2519.521]   FLTyreTemperatureValue@1042 58->65  FRTyreTemperatureValue@1042 62->65  RLtyreTemperatureValue@1042 59->65  RRTyreTemperatureValue@1042 59->65  
+[2519.521]   FLtyrePressureStatus@1043 2->0  FRTyrePressureStatus@1043 2->0  AmbientTemp@695 116->126  
+[2519.522] SNAP(recording end) changed signals since previous snapshot: 28
+[2519.522]   RAW 564: 02 34 09 00 3F 00 01 34 13 00 02 00 CD 0A
+[2519.523]   RAW 577: 02 41 09 01 00 00 00 44 06 00 01 00 9D 0A
+[2519.523]   RAW 695: 02 B7 09 7E 00 00 00 00 00 00 00 00 45 0A
+[2519.524]   RAW 722: 02 D2 09 AD 00 0D 00 A0 00 00 00 00 3C 0A
+[2519.525]   RAW 800: 03 20 09 35 50 16 02 00 00 00 00 00 CE 0A
+[2519.525]   RAW 963: 03 C3 09 00 00 00 04 10 00 00 00 00 E8 0A
+[2519.526]   RAW 1042: 04 12 09 5E 5E 5E 5E 41 41 41 41 00 A0 0A
+[2519.527]   RAW 1043: 04 13 09 00 00 00 00 55 01 00 00 00 7B 0A
+[2519.527]   RAW 1218: 04 C2 09 00 27 00 C2 3E 00 00 00 00 FB 0A
+[2519.528]   RAW 1219: 04 C3 09 35 50 16 02 07 00 00 00 00 79 0A
+[2519.530] 
+[2519.530] ===== RECORDING FINISHED =====
