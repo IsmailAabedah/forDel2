@@ -58,7 +58,7 @@ public class MainActivity extends Activity {
     @Override public void onCreate(Bundle b) {
         super.onCreate(b);
         buildUi();
-        log("بدء ZhongHong Diagnostic Probe v1.2");
+        log("بدء ZhongHong Diagnostic Probe v2.0");
         log("Android=" + Build.VERSION.RELEASE + " SDK=" + Build.VERSION.SDK_INT
                 + " ABI=" + Build.CPU_ABI + " device=" + Build.DEVICE);
         log("الشاشة=" + getResources().getDisplayMetrics().widthPixels + "x"
@@ -144,8 +144,10 @@ public class MainActivity extends Activity {
                 canService = binder;
                 log("CAN_SERVICE_CONNECTED component=" + name.flattenToShortString()
                         + " descriptor=" + safeDescriptor(binder));
-                registerCanCallback();
-                refreshCan();
+                binderWorker.execute(() -> {
+                    registerCanCallback();
+                    refreshCan();
+                });
             }
             @Override public void onServiceDisconnected(ComponentName name) {
                 canBound = false;
